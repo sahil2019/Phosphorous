@@ -11,16 +11,16 @@
     <div class="section">
         <ul>
             <li>
-                <a href="http://127.0.0.1:5500/recipe.html">Custom Recipes</a>
+                <a href="http://127.0.0.1:5500/Food1/recipe.html">Custom Recipes</a>
             </li>
             <li>
-                <a href="http://127.0.0.1:5500/custom.html">Custom Foods</a>
+                <a href="http://127.0.0.1:5500/food1/custom.html">Custom Foods</a>
             </li>
             <li>
-                <a href="http://127.0.0.1:5500/oracle.html">Ask the Oracle</a>
+                <a href="http://127.0.0.1:5500/Food1/oracle.html">Ask the Oracle</a>
             </li>
             <li>
-                <a href="http://127.0.0.1:5500/search.html">Search Foods</a>
+                <a href="http://127.0.0.1:5500/Food1/search.html">Search Foods</a>
             </li>
         </ul>
     </div>
@@ -32,7 +32,7 @@
         <div class="inline">
             <div class="container_1">
                 <div style="text-align: center;">
-                    <button data-modal-target="#modal">+ Search Foods</button>
+                    <button onclick="togglePopup()" class="s-button">+ Search Foods</button>
                 </div>
                <!-- on Search food button click this will display -->
                <div>
@@ -145,11 +145,15 @@
 
         <!-- on button search food click display -->
     </footer>
-    <div id="modal" class="modal">
+    <div id="popup" class="popup">
+        <div class="overlay"></div>
+       
+        <div class="content">
+            <button class="close-btn" onclick="closePopup" id="closer">&times;</button>
             <div style="width: 750px; text-align: center;">
                 <div class="titlebar">
                     <div class="titlebar-title">Search Foods</div>
-                    <button data-close-button class="close-button">&times;</button>
+                 
                 </div>
                 <div class="search"><div>
                     <div style="width: 100%;">
@@ -679,10 +683,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div align="center">
-                <div class="search">
-            </div>
         </div>
         <div>
             <table cellspacing="5" cellpadding="0" class="b1" style="width: 100%;">
@@ -698,8 +698,8 @@
                 </tbody>
             </table>
         </div>
+        </div>
     </div>
-    <div id="overlay"></div>
 
 
        
