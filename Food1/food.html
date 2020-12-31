@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="food.css">
+</head>
+<body>
+    <div id="DIV" class="popup_div">
+        <div style="width: 750px; text-align: center;">
+            <div class="titlebar">
+                <div class="titlebar-title">Search Foods</div>
+                <div class="titlebar-cancelbox">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAABBklEQVR4AbzXAcYCYRSF4W8NPz8RJLOygIAggAQEGEDbCa0gCIGEAswGajpD5aLr68B7eAF4XOCWL/tXezUt3BaqLXEJ7Kh6dYOAA6x/1dZhCgEGWGhThQHAAMuBfxGGAHNYbPXGHVQPAGuw2FoVHwjCKKAPg4A+DAL6MAjowyCgD4OAPgwC+jAI2PkwFujDeKAP44E+jAYKBm/5I6xTYxI2Uw/jcucI5GE+kIf5QB7mAwHYVp0sIACLP+fIBzKwQgF9GAT0YRDQh0FAHwYBfRgE9GEQsFF3FwYAd5/LOTAAeFGTEjYHYDkwh0VgDgOA1wjLgRHGAAdYo54jCBxhDDo6UBVdEAAh62XMjJer8QAAAABJRU5ErkJggg==" width="39" height="39"  style="width: 15px; height: auto; padding-top: 5px; padding-right: 20px;">
+                </div>
+            </div>
+            <div class="search"><div>
+                <div style="width: 100%;">
+                    <div class="search__1">
+                        <img src="https://cdn1.cronometer.com/pix/search_magnifier_v2.png"> 
+                        <input type="text" >
+                    </div> 
+                    <img class="searchimg1" src="img/spin2.gif" style="visibility: hidden;"> 
+                    <button >Search</button>
+                    <img class="searchimg2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAMAAABhEH5lAAAANlBMVEUAAADS0tfT09fT09jf39/T09fX19fS0tbT09fT09fT09bU1NjU1NbT09fT09fU1Neqqv/S0tfNMTTdAAAAEnRSTlMAbP9cCNUTRPXKY3x22vBTA84gYfxRAAAAf0lEQVR4AW2QhRWDUAxFv7tl/2UbqwG3Bd6JJ0axznnzJeATnYv4SWLJpbbukNFiyWRJxf1QAtnmr6lKZXFLcGPTQLX2OXuh6GjwgEIG8KSmNZJ1yHQk98lk538ikOy/5Ych2n2I6n6YvPT/QknWjpbX7q3S2kT6HicYRQawKl+4QwQOEj5bGQAAAABJRU5ErkJggg==" width="18" height="18" title="Search Options">
+                </div>
+            </div> 
+            <div aria-hidden="true" style="display: none;">
+                <table class="setting_table" width="100%"> 
+                    <tbody>
+                        <tr>
+                            <td>Source</td>
+                            <td>
+                                <div class="select-pretty">
+                                    <select class="gwt-ListBox" style="width: 100px;">
+                                        <option value="All">All</option>
+                                        <option value="NCCDB">NCCDB</option>
+                                        <option value="USDA">USDA</option>
+                                        <option value="ESHA">ESHA</option>
+                                        <option value="CRDB">CRDB</option>
+                                        <option value="CNF">CNF</option>
+                                        <option value="Nutritionix">Nutritionix</option>
+                                        <option value="CoFID">CoFID</option>
+                                        <option value="NEVO">NEVO</option>
+                                        <option value="NUTTAB">NUTTAB</option>
+                                        <option value="Custom">Custom</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td>Category</td>
+                            <td>
+                                <div class="select-pretty">
+                                    <select class="gwt-ListBox" style="width: 300px;">
+                                        <option value="All">All</option>
+                                        <option value="Baked Products">Baked Products</option>
+                                        <option value="Beef Products">Beef Products</option>
+                                        <option value="Beverages">Beverages</option>
+                                        <option value="Breakfast Cereals">Breakfast Cereals</option>
+                                        <option value="Cereal Grains and Pasta">Cereal Grains and Pasta</option>
+                                        <option value="Dairy and Egg Products">Dairy and Egg Products</option>
+                                        <option value="Ethnic Foods">Ethnic Foods</option>
+                                        <option value="Fast Foods">Fast Foods</option>
+                                        <option value="Fats and Oils">Fats and Oils</option>
+                                        <option value="Finfish and Shellfish Products">Finfish and Shellfish Products</option>
+                                        <option value="Fruits and Fruit Juices">Fruits and Fruit Juices</option>
+                                        <option value="Lamb, Veal, and Game Products">Lamb, Veal, and Game Products</option>
+                                        <option value="Legumes and Legume Products">Legumes and Legume Products</option>
+                                        <option value="Meals, Entrees, and Sidedishes">Meals, Entrees, and Sidedishes</option>
+                                        <option value="Nut and Seed Products">Nut and Seed Products</option>
+                                        <option value="Pork Products">Pork Products</option>
+                                        <option value="Poultry Products">Poultry Products</option>
+                                        <option value="Restaurant Foods">Restaurant Foods</option>
+                                        <option value="Sausages and Luncheon Meats">Sausages and Luncheon Meats</option>
+                                        <option value="Snacks">Snacks</option>
+                                        <option value="Soups, Sauces, and Gravies">Soups, Sauces, and Gravies</option>
+                                        <option value="Spices and Herbs">Spices and Herbs</option>
+                                        <option value="Supplements">Supplements</option>
+                                        <option value="Sweets">Sweets</option>
+                                        <option value="Vegetables and Vegetable Products">Vegetables and Vegetable Products</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td>Language</td>
+                            <td>
+                                <div class="select-pretty">
+                                    <select class="gwt-ListBox" style="width: 120px;">
+                                        <option value="All">All</option>
+                                        <option value="English">English</option>
+                                        <option value="French">French</option>
+                                        <option value="Spanish">Spanish</option>
+                                        <option value="German">German</option>
+                                        <option value="Italian">Italian</option>
+                                        <option value="Polish">Polish</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="container">
+                <div class="option foodSearchSelectTab">All</div>
+                <div class="option">Common Foods</div>
+                <div class="option">Favorites</div>
+                <div class="option">Supplements</div>
+                <div class="option">Brands</div>
+                <div class="option">Restaurants</div>
+                <div class="option">Custom</div>
+                <div class="option" aria-hidden="true" style="display: none;">Mercola</div>
+                <div class="icon">
+                    <a target="_blank" title="Learn more in our user manual" rel="noopener noreferrer" href="https://cronometer.zendesk.com/hc/en-us/articles/360018193011">
+                        <div class="help-link">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAQAAAAkGDomAAAAAmJLR0QAAKqNIzIAAATGSURBVGjezZtdbFRFFIC/vSltla0u3aUPGJKKtiCwjUog0cS2BEQTjQ82BASNVWMiEl+NLzSrpNrnaqzGX5QHeTAmmqAPmmiiiYooqQJtlW6jYSMtlG0bSilN14ft2u6cuXf3/u105mFz786c89079845c+bcCP5KE0lupZFGGohxMwnmyJJlgguMMEKafs5hoNzEft7nH3Jl1DTvsZeVlYO7m3eYLgttaZ2kj2TYaNU8wU+u0ZbW79lHVThwcVKM+YIr1AxdrAoWLsKzXA4ErlBH6QwOL+lzWO3qD9wRBN5uroaClyPHNA+XHjynYvEaL5aQcJ2fOc0AA/zLRS6RI0GcNaxnA5vYxgrH3jm66SLn7d7dyJeO1z9EinZqHGXU0s7LDDnK+ZxaL3ir+c1W5DivupzTNtPDuK28E9S7xbuNERthIzzPDR5H5ICt1L9odCNqLee1Yubp9QhXKCvpZV4r+2/WlCukgWGbe9cayLTVanMfB4mX072WU9ruR4kG6Gp8pNVxspzX5U1Nx7kg5/2F0smcRlNvqW67tH7IzlCs+04mNdocdSUYFR1m2Baad7SVGaFvjIR9h481V7Q7VAeuQ6PxiF3j7ZrGh0N3f1/RaL1H13AF50TD4yVsdbFVLa7lu3Jfib4DOqf2BdHsd1cTi1dAiHJa9D6oNqoStmOeO10NlXdAaBHWJaPew6eFgj6Xz5IfQOgT/TuLn4M/lb+zrlcN/gBjZIXhc3x/U67fRn+AkBIS7lv8U7WMU8QqDhhjSpHwwaILpK46ejzMZ34BoUfYsIVoxB4hfJ2JaArrBEcHWCC8vF8YNgI4zEnlTJse8BimyicSEOLixrYYA2wRLFHpAV7GZFEDLPdbNCtNvjEK+LVy3CwBzxgFPFsacNAooKq9uUqsRoc8is65ivrYFVX7LRZ1yqmLRu+gqr1OAk4ZBVS110W4RnXRqRpmDQ5xNdeKjmctEb+zjN5BVXuVRVasEEwWVfuExaQ66kYBVe2TEjBhFDAuATPKqSajgKrZyFhy7l5WgIMScJNRwI3S9O0IyN3yvyYBRKB9B9QL0UljgEkhpd5inH6l2YPGBvgB5fgPxi3gO+X0Y8YA9ynH3+Z/OgJZdvof4tt1y878wn1mWS7cry6mERwRoY9oxQFl6GNJKLhViO+qOGCXkNBa7Gqrs2GsooCrxIJTMSCmA5hvif5PKo4hGREC3lAxwI0iBJyWYfSDms29SgXRB0Xv52SzGs0eZ2W2IY5rtiG0iQTtRjZyDmu03mvX+Kim8SOh4u3RaPzQvnmDJq9gmi2h4W3RbCaOOm9rP6S5oiuhbcde0WjbVaqbfkP7qcDxPG5oQy392u36TwNcMUc5ptXxqxLlsCmrSdskVbQFgtdmI7/MpAqAtcKuFKzLG77TUl73n5YCTok9aQ6YT+zJD7RzatRmV9ICT43KX/EXJZPLtgeQXPaZU7ZMqfS8bl4qcRmznOAMZxfS88aIECfxf3re1pLvZTeHPK+iAXhUM9tXMMGxvOdnWaeI5h+EZ7i0fJNsC5G7FBcCgTvPIQ8b5mWGuPfzo89h3RtWovdiuYu3l2uq/NJY8uMuPjZ41/vHBhGfoE200Fj0ucZ1JsiSZTSYzzX+AxR/bQWgqxHaAAAAAElFTkSuQmCC" width="80" height="80" class="gwt-Image" style="width: 16px; height: 16px; opacity: 0.5;">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="container-table">
+                <div style="overflow: auto; position: relative; zoom: 1; height: 15em;">
+                    <div style="position: relative; zoom: 1;"><div>
+                        <div  aria-hidden="true" style="display: none;">
+                            <div >No results found - check your spelling, try alternatives, or create a &nbsp;</div>
+                            <a >custom food</a>
+                        </div>
+                        <div aria-hidden="true" style="display: none;">
+                            <div >Add favorites by clicking the Star icon next to the 'Add Serving' button</div>
+                        </div>
+                        <table class="prettyTable" style="width: 100%; line-height: 15px;">
+                            <colgroup>
+                                <col width="80%">
+                                <col width="10%"></colgroup>
+                                <tbody>
+                                    <tr class="prettyTable-header">
+                                        <td>
+                                            <div style="white-space: nowrap;">Description</div>
+                                        </td>
+                                        <td>
+                                            <div style="white-space: nowrap;">Source</div>
+                                        </td>
+                                    </tr>
+                                    <tr class=""><td>
+                                        <div style="white-space: normal;">Banana, Fresh</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="evenrow highlight">
+                                    <td>
+                                        <div style="white-space: normal;">Avocado, Black Skin</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                    <td>
+                                        <div style="white-space: normal;">Apple, Fresh, With Skin</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="evenrow">
+                                    <td>
+                                        <div style="white-space: normal;">Tomato Raw, Includes Cherry, Grape, Roma</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                    <td>
+                                        <div style="white-space: normal;">Baby Spinach, Raw</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="evenrow">
+                                    <td>
+                                        <div  style="white-space: normal;">Oatmeal, Regular or Quick Cooking, Dry</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                    <td>
+                                        <div style="white-space: normal;">Olive Oil</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="evenrow">
+                                    <td>
+                                        <div style="white-space: normal;">Chicken Breast, Skin Removed Before Cooking</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                    <td>
+                                        <div style="white-space: normal;">Carrots, Raw</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="evenrow">
+                                    <td>
+                                        <div style="white-space: normal;">Chia Seeds</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="white-space: normal;">Tap Water</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="evenrow">
+                                    <td>
+                                        <div style="white-space: normal;">Broccoli, Cooked From Fresh</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div  style="white-space: normal;">Egg, Whole, Cooked, Hard-Boiled</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="evenrow">
+                                    <td>
+                                        <div  style="white-space: normal;">Walnuts</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div" style="white-space: normal;">Sweet Potato, Baked</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="evenrow">
+                                    <td>
+                                        <div  style="white-space: normal;">Cucumber, Raw, With Peel</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                    <td>
+                                        <div  style="white-space: normal;">Onion, White, Yellow or Red, Raw</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="evenrow">
+                                    <td>
+                                        <div  style="white-space: normal;">Strawberries, Fresh</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div  style="white-space: normal;">Blueberries, Fresh</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="evenrow">
+                                    <td>
+                                        <div" style="white-space: normal;">Pepper, Sweet, Red, Raw</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div  style="white-space: normal;">Coffee, Prepared From Grounds</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="evenrow">
+                                    <td>
+                                        <div  style="white-space: normal;">Flax Seeds, Not Fortified</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div  style="white-space: normal;">Orange, Fresh</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="evenrow">
+                                    <td>
+                                        <div  style="white-space: normal;">Broccoli, Raw</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div  style="white-space: normal;">Rice, White, Long-Grain, Regular, Enriched, Cooked</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="evenrow">
+                                    <td>
+                                        <div  style="white-space: normal;">Almond Milk, Plain, Original, Unsweetened</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div  style="white-space: normal;">Baby Kale, Raw</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="evenrow">
+                                    <td>
+                                        <div  style="white-space: normal;">Butter, Salted</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div  style="white-space: normal;">Coconut Oil</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="evenrow">
+                                    <td>
+                                        <div  style="white-space: normal;">Brown Rice, Cooked in Unsalted Water</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div  style="white-space: normal;">Milk, Whole</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="evenrow">
+                                    <td>
+                                        <div  style="white-space: normal;">Blueberries, Frozen, Unsweetened</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div  style="white-space: normal;">Sunflower Seeds, Raw</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="evenrow">
+                                    <td>
+                                        <div  style="white-space: normal;">Lentils, Boiled</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div  style="white-space: normal;">Brazil Nuts, Unsalted</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="evenrow">
+                                    <td>
+                                        <div  style="white-space: normal;">Mushrooms, Raw</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div  style="white-space: normal;">Potato, Boiled with Skin</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="evenrow">
+                                    <td>
+                                        <div  style="white-space: normal;">Broccoli, Cooked from Frozen</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="white-space: normal;">Peanut Butter, Unsalted</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="evenrow">
+                                    <td>
+                                        <div style="white-space: normal;">Honey</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="white-space: normal;">Mushrooms, Cooked from Fresh</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="evenrow">
+                                    <td>
+                                        <div style="white-space: normal;">Squash, Summer, Zucchini, Includes Skin, Raw</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="white-space: normal;">Grape, Red or Green (European Type, such as Thompson Seedless), Adherent Skin, Raw</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="evenrow">
+                                    <td>
+                                        <div style="white-space: normal;">Pepitas</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="white-space: normal;">Butter, Unsalted</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="evenrow">
+                                    <td>
+                                        <div style="white-space: normal;">Lemon Juice, Fresh</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="white-space: normal;">Sweet Potato, Boiled</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="evenrow">
+                                    <td>
+                                        <div style="white-space: normal;">Green Peas, Cooked from Frozen</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="white-space: normal;">Mango, Fresh</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                                <tr class="evenrow">
+                                    <td>
+                                        <div style="white-space: normal;">Onion, White, Yellow or Red, Cooked</div>
+                                    </td>
+                                    <td>
+                                        <div class="source-lab" style="white-space: normal;">NCCDB</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div align="center">
+            <div class="search">
+        </div>
+    </div>
+    <div>
+        <table cellspacing="5" cellpadding="0" class="b1" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td align="center" style="vertical-align: middle;">
+                        <button type="button">Cancel</button>
+                    </td>
+                    <td align="center" style="vertical-align: middle;">
+                        <button type="button" disabled="">Select</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
