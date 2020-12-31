@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trends</title>
+    <link rel="stylesheet" href="trends.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Date', 'calories', 'weight'],
+          ['25 DEC',  1000,      400],
+          ['26 DEC',  1170,      460],
+          ['27 DEC',  660,       1120],
+          ['28 DEC',  1030,      540],
+          ['29 DEC',  1030,      540],
+          ['30 DEC',  1030,      540]
+        ]);
+
+        var options = {
+          title: 'Calories Consumed',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+        chart.draw(data, options);
+      }
+    </script>
+   
+     <!------------------------------------------- refernce taken form google chart ---------------------------------->
+      <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+  
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['Date', 'calories', 'weight'],
+            ['25 DEC',  1000,      400],
+            ['26 DEC',  1000,     400],
+            ['27 DEC',  1000,      400],
+            ['28 DEC',  1000,      400],
+            ['29 DEC',  1000,     400],
+            ['30 DEC',  1000,      040]
+          ]);
+  
+          var options = {
+            title: 'Weight (in kg)',
+            curveType: 'function',
+            legend: { position: 'bottom' }
+          };
+  
+          var chart = new google.visualization.LineChart(document.getElementById('curve_charts'));
+          chart.draw(data, options);
+        }
+      </script>
+</head>
+<body>
+    <div class="trends__nav">
+        <div class="trends__nav__logo">
+            <img  src="https://cdn1.cronometer.com/logos/cronometer-logo-orange.png" style="width: 200px; height: auto;margin-left: 30px;" class="dropdown__img" id="dropdown__img">
+            <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAAAtCAYAAAAwRkzIAAAApUlEQVR42u3QyQ3AQBACQTJzVk5//XIGoJ2jW+KPSud9DvNNIBgx/8AwYoIaAgXVjAlqABPUACagZkxQA5igBjBBDWCCGsAENYC5GVXpwAS1NuYGVN0KTFBrY05CVbXABLU2ZkdUdQnMZajqGqALUDUhMAeialpgDkHV9MBsiqptgdkEVdsDsygqikZU9IyoqBlR0TKiomRERceIiooRFQ0japevH0qoq6UJrp4pAAAAAElFTkSuQmCC" width="84" height="45" style="width: 10px; height: 5px;">
+        </div>  
+        <div class="trends__nav__list">
+            <div>Dairy</div>
+            <div>Trends</div>
+            <div>Foods</div>
+            <div>Settings</div>
+            <div>Plans</div>
+            <div>Help</div>
+        </div>
+    </div>
+
+                 <!---------------------- the below one is the body part of trends ------------------------>
+
+    <div class="trends__body">
+        <h2>Charts</h2>
+        <h3>Customize your charts to review and analyze the information you’re most interested in.</h3>
+    </div>
+
+    <div>
+        <div class="trends__body__1">
+            <div class="trends__body__img"><img src="https://cdn1.cronometer.com/logos/cronometer-logo-gold.png"  width="200" height="40"></div>
+
+            <div><img src="data:image/png;base64,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" width="100" height="130"></div>
+
+            <div class="trends__para"><strong>Gain valuable insights with Gold!</strong><br>Create custom charts for the biometrics<br> and nutrients that matter most to you.</div>
+
+            <div ><button type="button" class="trends__button">See All Features</button></div>
+        </div>
+
+        <div class="trends__body__3">
+            <div class="mange__charts">Manage charts <i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+        </div>
+
+        <div class="trends__graph">
+            <div class="trends__graph__1">
+
+                <div>
+                    <div class="inner__div"><strong>Calories Consumed (kcal)</strong> </div>
+                    <div class="inner__div__1">From Dec 24, 2020 to Dec 30, 2020</div>
+                </div>
+                <div class="trends__empty">
+
+                </div>
+                <div class="dropdown__box1">
+                    <select class="trends__dropdown">
+                        <option value="Last 7 days">Last 7 days</option>
+                        <option value="Last 2 weeks">Last 2 weeks</option>
+                        <option value="Last 3 weeks">Last 3 weeks</option>
+                        <option value="Last 4 weeks">Last 4 weeks</option>
+                        <option value="Last 8 weeks">Last 8 weeks</option>
+                        <option value="Last 3 months">Last 3 months</option>
+                        <option value="Last 6 months">Last 6 months</option>
+                        <option value="Last year">Last year</option>
+                        <option value="All Time">All Time</option>
+                        <option value="Custom Range">Custom Range</option></select>
+                </div>
+                <div>
+                    <select class="dropdown__box2">
+                        <option value="All Days">All Days</option>
+                        <option value="Non-Empty Days">Non-Empty Days</option>
+                        <option value="Completed Days">Completed Days</option>
+                    </select>
+                </div>
+
+                <div class="dropdown__box3">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAABSElEQVR42u3aQU4CQRAF0Nm54QroxiPiGQhHkEPgEeQIzk0MiXEF2iTNAhMlUDNWE95L/oYwm+qkgeJ3HQAAAAAAQHumJU8l65L3mnV9bWo845mUvJTsSr5+ya6+Z2Jcw7or6f8Y/M/09RkGsjxj+IcsjW0YjyXbCw5gW58laH7B8A+ZG1/cW+AAeuOL+wwcwIfxxW0CB7AxPlfQ1VsEDmBhfHEPga+h98Y3jGc/xPJXEed8FlhFjGC/YFt1p5dxq84yblT7e33WHa+jX+tr7nwAAIAR6AUl0QtKpBeUTC8okV5QMr2gZP6UT6YXlEwvyBV02/SCkukFNUAvqIFVhF5QMr2gRugFAQAA/DO9oCR6QYn0gpLpBSXSC0qmF5TMn/LJ9IKS6QW5gm6bXlAyvaAG6AU1sIrQC0qmF9QIvSAAAAAAAOCqfANelVRBz3X+0AAAAABJRU5ErkJggg==" width="96" height="96" class="GHDCC5OBM4" style="width: 25px; height: 25px;">
+                </div>
+
+            </div>
+
+                 <div id="curve_chart" style="width: 1200px; height: 600px"></div>
+        </div>
+
+         <!-- ---------------------------------------this is the second graph ----------------------------------------- -->
+
+        <div class="trends__graph">
+            <div class="trends__graph__1">
+
+                <div>
+                    <div class="inner__div"><strong> Weight (kg)</strong> </div>
+                    <div class="inner__div__1">From Dec 24, 2020 to Dec 30, 2020</div>
+                </div>
+                <div class="trends__empty__1"> 
+                    <select class="gwt-ListBox" style="width: 230px;">
+                        <option value="Weight">Weight</option>
+                        <option value="Height">Height</option>
+                        <option value="Heart Rate">Heart Rate</option>
+                        <option value="Systolic Blood Pressure">Systolic Blood Pressure</option>
+                        <option value="Diastolic Blood Pressure">Diastolic Blood Pressure</option>
+                        <option value="Blood Glucose">Blood Glucose</option>
+                        <option value="Body Temperature">Body Temperature</option>
+                        <option value="Body Fat">Body Fat</option>
+                        <option value="Waist Size">Waist Size</option>
+                        <option value="Total Cholesterol">Total Cholesterol</option>
+                        <option value="LDL Cholesterol">LDL Cholesterol</option>
+                        <option value="HDL Cholesterol">HDL Cholesterol</option>
+                        <option value="Triglycerides">Triglycerides</option>
+                        <option value="Mood">Mood</option>
+                        <option value="Ketones (Blood)">Ketones (Blood)</option>
+                        <option value="Sleep">Sleep</option>
+                        <option value="Ketones (Urine)">Ketones (Urine)</option>
+                        <option value="Ketones (Breath)">Ketones (Breath)</option>
+                        <option value="25-Hydroxy Vitamin D">25-Hydroxy Vitamin D</option>
+                        <option value="Ferritin">Ferritin</option>
+                        <option value="Pulse Wave Velocity">Pulse Wave Velocity</option></select>
+                </div>
+                <div class="dropdown__box1">
+                    <select class="trends__dropdown">
+                        <option value="Last 7 days">Last 7 days</option>
+                        <option value="Last 2 weeks">Last 2 weeks</option>
+                        <option value="Last 3 weeks">Last 3 weeks</option>
+                        <option value="Last 4 weeks">Last 4 weeks</option>
+                        <option value="Last 8 weeks">Last 8 weeks</option>
+                        <option value="Last 3 months">Last 3 months</option>
+                        <option value="Last 6 months">Last 6 months</option>
+                        <option value="Last year">Last year</option>
+                        <option value="All Time">All Time</option>
+                        <option value="Custom Range">Custom Range</option></select>
+                </div>
+                <div>
+                    <select class="dropdown__box2">
+                        <option value="All Days">All Days</option>
+                        <option value="Non-Empty Days">Non-Empty Days</option>
+                        <option value="Completed Days">Completed Days</option>
+                    </select>
+                </div>
+
+                <div class="dropdown__box3">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAABSElEQVR42u3aQU4CQRAF0Nm54QroxiPiGQhHkEPgEeQIzk0MiXEF2iTNAhMlUDNWE95L/oYwm+qkgeJ3HQAAAAAAQHumJU8l65L3mnV9bWo845mUvJTsSr5+ya6+Z2Jcw7or6f8Y/M/09RkGsjxj+IcsjW0YjyXbCw5gW58laH7B8A+ZG1/cW+AAeuOL+wwcwIfxxW0CB7AxPlfQ1VsEDmBhfHEPga+h98Y3jGc/xPJXEed8FlhFjGC/YFt1p5dxq84yblT7e33WHa+jX+tr7nwAAIAR6AUl0QtKpBeUTC8okV5QMr2gZP6UT6YXlEwvyBV02/SCkukFNUAvqIFVhF5QMr2gRugFAQAA/DO9oCR6QYn0gpLpBSXSC0qmF5TMn/LJ9IKS6QW5gm6bXlAyvaAG6AU1sIrQC0qmF9QIvSAAAAAAAOCqfANelVRBz3X+0AAAAABJRU5ErkJggg==" width="96" height="96" class="GHDCC5OBM4" style="width: 25px; height: 25px;">
+                </div>
+            </div>
+                <div id="curve_charts" style="width: 1200px; height: 600px"></div>
+                        
+        </div>
+
+    </div>
+
+  <!--------------------------------------------------------- all dynamic effects elements ------------------------->
+
+        <div class="img__card" id="img__card">
+            <div class="outer">
+                <div class="inline">Gold</div>
+                <p class="GHDCC5OBPR"> Our premium features like Timestamps and Food Suggestion will help you plan, customize and share your perfect diet. </p>
+            </div>
+            <div class="outer">
+                <div class="inline">Pro</div>
+                <p class="GHDCC5OBPR"> Are you a Coach, Trainer or Healthcare Professional that believes diet is a critical component to health and fitness? Learn how you can monitor clients' nutrition in real-time with Cronometer Pro. </p>
+
+            </div>
+        </div>
+
+    <script src="trends.js"></script>
+</body>
+</html>
