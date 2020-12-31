@@ -1,0 +1,235 @@
+.section  {
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+}
+
+.section ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.section ul li a:hover {
+    color: #000;
+}
+.section ul li {
+    display: inline block;
+}
+
+.section ul li a {
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #5c5c5c;
+    cursor: pointer;
+    font-size: 15px;
+    text-shadow: none;
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 2px 20px;
+}
+.title {
+    margin-left: 70px;
+}
+.inline{
+    margin-left: 20px;
+    text-align: center;
+    display: inline block; 
+}
+.container_1 {
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #ebeae6;
+    border-radius: 2px;
+    background: #f8f5f2;
+    margin-right: 10px;
+    padding: 20px;
+}
+.container_2 {
+    width: 900px;
+    display: inline-block;
+    vertical-align: top;
+}
+.data {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    padding-top: 40px;
+    border: 1px solid #ebeae6;
+    border-radius: 2px;
+    min-height: 615px;
+}
+.popup {
+    color: #e65f29;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    margin: 15px auto;
+    font-size: 18px;
+    background: #f8f5f2;
+    padding: 2px 30px;
+    border: 1px solid #f8f5f2;
+    border-radius: 15px;
+    box-shadow: none;
+    transition: background 200ms ease-in-out;
+}
+
+.popup{
+    position: relative;
+    display: inline block;
+    cursor: pointer;
+    user-select: none;
+}
+
+.button:hover {
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 #fff inset, 0 0 0 2px #fafafa;
+    text-shadow: 0 1px 1px #fff;
+}
+
+.input_1 {
+    background-color: #fbfbfa;
+    color: #5c5c5c;
+    border-radius: 2px;
+}
+.input{
+    width: 290px;
+    padding: 5px;
+}
+.box{
+    margin: 0;
+    font-size: 14px;
+    border: 1px solid #bdbdbd;
+    background: #fff;
+}
+
+.scrollbar {
+    overflow: hidden;
+    position: relative;
+    zoom: 1;
+    height: 435px;
+}
+
+.footer-container {
+    margin: 60px auto 0;
+    width: 100%;
+    position: relative;
+}
+
+.footer-nav {
+    margin: 20px auto;
+    width: 100%;
+   
+}
+.footer-nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.footer-nav ul li {
+    display: inline block; 
+}
+.footer-nav ul li a{
+    font-weight: 600;
+    color: #4F4E53;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 2px 20px;
+}
+.orange-dot {
+    background: #FF763F;
+    border-radius: 50%;
+    height: 6px;
+    width: 6px;
+    margin: 0 0 2px 0;
+}
+.footer-container-gray {
+    width: 100%;
+    background: #4F4E53;
+    padding: 30px 0 60px;
+}
+
+.footer-left {
+    width: 30%;
+    float: left;
+    position: relative;
+}
+
+.footer-middle {
+    width: 40%;
+    float: left;
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+}
+.footer-middle a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-right {
+    width: 30%;
+    float: left;
+}
+
+.links-container {
+    text-align: right;
+    margin: 15px 30px 0 0;
+}
+
+.facebook {
+    background-image: url(https://cdn1.cronometer.com/logos/icon-facebook-white.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+.twitter {
+    background-image: url(https://cdn1.cronometer.com/logos/icon-twitter-white.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+.instagram {
+    background-image: url(https://cdn1.cronometer.com/logos/icon-instagram-white.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+.youtube {
+    background-image: url(https://cdn1.cronometer.com/logos/icon-youtube-white.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+.links{
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+.footer-container-gray::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.support_button {
+    font: bold;
+    background-color: #27ae60 !important;
+    color: #ffffff !important;
+    fill: #ffffff !important;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 30px;
+    letter-spacing: 0.6;
+    font-size: 1.07143rem;
+    border: none;
+    padding: 15px 20px 15px 20px;
+    position: fixed;
+    top: 90%;
+    left: 5%;
+    transform: translate(-50%, -40%);
+    z-index: 1;
+}
