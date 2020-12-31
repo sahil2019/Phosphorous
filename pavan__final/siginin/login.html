@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login__container">
+        <div class="img__main"><img src="https://cdn1.cronometer.com/logos/cronometer-logo-orange.png" width="280" height="auto" alt="Cronometer"></div>
+        <div class="login__input"><input type="text" placeholder="Enter Your Email" ></div>
+        <div class="login__input"><input type="password" placeholder="Enter Your Password" ></div>
+        <div class="login__input"  onclick="myFunction()"><button>LOGIN</button></div>
+        <div class="login__bottom">
+            <div class="bottom__inner"><span>Not a member? </span> Sign Up Now</div>
+            <div class="bottom__inner">Forgot password?</div>
+        </div>
+
+        <script>
+            function myFunction() {
+           location.replace("https://cronometer.com/#diary")
+           }
+        </script>
+    </div>
+</body>
+</html>

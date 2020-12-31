@@ -1,0 +1,47 @@
+.login__container{
+    height: 450px;
+    width: 500px;
+    border: 1px solid rgb(179, 172, 172);
+    margin: 20px auto;
+}
+.login__input input{
+    padding: 10px;
+    width: 400px;
+    margin: 20px 33px ;
+    font-size: 15px;
+    /* border-radius: 5px; */
+}
+
+.login__input button{
+    padding: 10px;
+    width: 430px;
+    margin: 20px 33px ;
+    font-size: 15px;
+    /* border-radius: 5px; */
+}
+
+.img__main{
+    /* border: 1px solid green; */
+    width: 60%;
+    margin: 20px auto;
+}
+
+.login__bottom{
+    display: flex;
+    align-items: center;
+    
+}
+
+.bottom__inner{
+    width: 200px;
+    height: 50px;
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    margin-left: 30px;
+    text-align: right;
+    color: orangered;
+}
+
+span{
+    color: black;
+}
