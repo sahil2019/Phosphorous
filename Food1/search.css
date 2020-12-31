@@ -61,7 +61,7 @@
     border-radius: 2px;
     min-height: 615px;
 }
-.popup {
+.s-button {
     color: #e65f29;
     font-weight: 500;
     font-family: "Open Sans", sans-serif;
@@ -75,14 +75,8 @@
     transition: background 200ms ease-in-out;
 }
 
-.popup{
-    position: relative;
-    display: inline block;
-    cursor: pointer;
-    user-select: none;
-}
 
-.button:hover {
+.s-button:hover {
     border: 1px solid #d8d8d8;
     border-radius: 5px;
     box-shadow: 0 1px 0 #fff inset, 0 0 0 2px #fafafa;
@@ -232,4 +226,53 @@
     left: 5%;
     transform: translate(-50%, -40%);
     z-index: 1;
+}
+
+
+.popup .overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 170vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    z-index: 2;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.popup .close-btn{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    /* background: #222; */
+    /* color: #fff; */
+    font-size: 25px;
+    font-weight: 600;
+    /* line-height: 30px; */
+    /* text-align: center; */
+    /* border-radius: 50%; */
+}
+
+.popup.active .overlay{
+    display: block;
+}
+
+.popup.active .content{
+    transition: all 30ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
 }
