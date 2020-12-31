@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project</title>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <style>
+            .home__main__container{
+                border:1px solid grey;
+            }
+            .home__main__container__upper{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content:flex-start;
+            }
+            .home__main__container__upper > div{
+                margin: 3vh 2vh 0;
+                border:1px solid grey;
+                text-align: center;
+                color:rgb(255, 123, 0);
+                padding:0 13px;
+                
+            }
+            .home__main__container__upper > div:nth-child(1)
+            {
+                width:24%;
+                text-align: left;
+                padding-left:10px;
+            }
+            .home__main__container__upper > div:nth-child(1) > img{
+                width:70%;
+                
+            }
+            .home__main__container__middle{
+                border:1px solid grey;
+                border-radius: 5px;
+                width:100%;
+                display: flex;
+                border:2px solid black;
+                justify-content: center;
+
+            }
+            .home__calender__charts{
+                width:30%;
+                border:2px solid red;
+                margin:1vh;
+            }
+            .home__info{
+                width:50%;
+                border:2px solid green;
+                margin: 1vh 2vh;
+            }
+
+            /* .home__calender{
+                /* width:50vh;
+                height:50vh; 
+               
+            } */
+            .month{
+                width:100%;
+                background-color:rgb(252, 248, 248);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                 padding-top:1px;
+                 padding-bottom: 1px;
+                 text-align: center;
+            }
+            .month h3{
+                font-size: 20px;
+                font-weight: lighter;
+            }
+            .month i{
+                cursor: pointer;
+                font-size: 13px;
+                margin-left: 10px;
+                margin-right: 10px;
+            
+            }
+            .weekdays{
+                width:100%;
+                height:40px;
+                display: flex;
+                align-items: center;
+                
+               
+            }
+            .weekdays > div{
+                font-size: 18px;
+                
+                text-align: center;
+                width:18%;
+                color:#666;
+            }
+            .days{
+                width:100%;
+                display: flex;
+                flex-wrap: wrap;
+              
+             
+
+            }
+            .days  div{
+                font-size: 15px;
+                border: 1px solid #e6eaed;
+                text-align: center;
+                 width:13.5%;
+                height:5vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color:#333;
+                background-color: white;
+            }
+            .days >  .next__date ,.days > .prev__date{
+                color: #c9c9c9;
+                background-color: #fbfbfb;
+            }
+            
+            .today{
+                background-color: #27ae60;
+            }
+            #home__calender__display__button{
+                width:100%;
+                height:7vh;
+                margin-bottom: 2vh;
+                background-color:#27ae60;
+                color:white;
+                border: 0;
+                outline: none;
+                border-radius: 5px;
+                font-size: 17px;
+                font-weight: bold;
+                cursor: pointer;
+
+
+
+            }
+            .home__info{
+                border:3px solid palevioletred;
+            }
+            .home__info__apps{
+                width:100%;
+               
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+               min-height: 10%;
+                
+             } 
+             .home__info__apps > div{
+                
+                 margin: 0 10px;
+                 padding:5px ;
+                 color:#404040;
+                
+                 font-weight: bold;
+                
+
+             }
+             .home__info__apps > div:hover{
+                 background-color:rgb(238, 238, 238) ;
+                 border-radius: 10px;
+                 cursor: pointer;
+             }
+            /* .home__info__apps  span{
+                margin-left:20px;
+                margin-top: 20px;
+               
+            } */
+            .home__info__apps img{
+                width:8%;
+             
+            }
+            .home__app__info__add{
+                border:1px solid rgb(214, 211, 211);
+                border-radius: 5px;
+                width:100%;
+                min-height: 30vh;
+            }
+            .add__food__margin{
+                padding-left: 10vw;
+               
+            }
+            .home__charts{
+                border:1px solid grey;
+                width:98%;
+               
+                margin: 1vh 0;
+                border-radius: 5px;
+            }
+            .home__calories{
+                padding: 5px;
+                font-size: 17px;
+                font-weight: bold;
+                background: #eee;
+                border-radius: 5px 5px 0 0;
+                border: 1px solid #eee;
+                border-bottom: 1px solid #bdbdbd;
+                text-align: center;     
+            }
+            .home__info__titles{
+                background-color: #eee;
+                font-weight: lighter;
+                border:1px solid rgb(214, 211, 211); 
+                padding:1vh 0.3vh;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+
+            }
+            .home__info__titles > span:nth-child(2)
+            {
+                margin-left: 30vh;
+            }
+            .home__info__titles > span:nth-child(1)
+            {
+                margin-left: 10vh;
+            }
+            .home__info__titles > span:nth-child(3)
+            {
+                margin-left: 20vh;
+            }
+            .home__chart__container{
+                width:100%;
+                min-height: 33vh;
+               
+            }
+            .home__pie__charts{
+                border:1px solid green;
+                margin-top: 1vh;
+                width:100%;
+                min-height: 25vh;
+                display: flex;
+                justify-content: center;
+            }
+            .home__calories__summary{
+                width:100%;
+               
+                color:#eee;
+                padding: 5px;
+                
+            }
+            .macro__nutrients__target{
+                width:100%;
+                border:1px solid grey;
+            }
+            .home__chart__dummy__data{
+                width:60%;
+                margin-left:13vh;
+                margin-top: 1vh;
+                padding: 5px 2px;
+            }
+            .home__calories__summary{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .home__calories__donut__chart{
+                border:2px solid red;
+                width:50%;
+                height:90%;
+                padding: 0;
+                color:white;
+                text-align: center;
+                
+
+            }
+           .purple > div:nth-child(1)
+           {
+               border:1px solid green;
+               padding:20px 4px;
+               background-color: #9279bb;
+                font-size: 20px;
+                font-weight: bold;
+           }
+           .purple > div:nth-child(2)
+           {
+            background-color:#77639a ;
+            padding:4vh 4px;
+            
+           }
+           .calorie__text__part{
+               width:100%;
+               height:10%;
+               border:2px solid orangered;
+           }
+           .macro__nutrients__target  span{
+             
+              display: inline-block;
+               margin-left: 4vh ;
+               width:70%;
+               text-align: center;
+               background-color: #e4e6e8;
+                border-radius: 5px;
+           }
+           .macro__nutrients__target >div:nth-child(3) >span{
+               margin-left: 2vh;
+           }
+           .macro__nutrients__target >div:nth-child(4) >span{
+               margin-left: 7.2vh;
+           }
+           .macro__nutrients__target >div{
+               margin:2vh 1vh ;
+           }
+        /* last div */
+           .nutrient__targets__gold__last__div{
+            border:2px solid grey;
+            margin:2vh 3vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+           }
+           .nutrient__targets__gold__last__div p{
+               color:grey;
+           }
+           .upgrade__to__gold{
+               border:1px solid black;
+               min-height: 10vh;
+               display: flex;
+               justify-content: center;
+           }
+           .last__div{
+               width:97%;
+               margin: auto;
+               border:3px solid greenyellow;
+
+           }
+           .upgrade__gold__firstdiv{
+               width:20%;
+               border:2px solid black;
+           }
+           .upgrade__gold__seconddiv{
+               width:70%;
+               border:2px solid black;
+           }
+           .rounded__div{
+            text-align: center;
+            height:9vh;
+             width:5vw;
+             padding:10px;
+             border-radius: 50%;
+            border:9px solid grey;
+           }
+           .upgrade__gold__seconddiv >img
+           {
+            width:100%;
+            height:110%;
+           }
+
+           
+        </style>
+        
+    </head>
+    <body>
+        <div class="home__main__container">
+            <div class="home__main__container__upper">
+                <div>
+                    <img src="https://cdn1.cronometer.com/logos/cronometer-logo-orange.png"/>
+                </div>
+                <div>
+                    <a><p>Diary</p></a>
+                </div>
+                <div>
+                    <a><p>Trends</p></a>
+                </div>
+                <div>
+                    <a><p>Foods</p></a>
+                </div>
+                <div>
+                    <a href="homeSettings.html"><p>Settings</p></a>
+                </div>
+                <div>
+                    <a><p>Plans</p></a>
+                </div>
+                <div>
+                    <a><p>Help</p></a>
+                </div>
+
+            </div>
+            <div class="home__main__container__middle">
+                <div class="home__calender__charts">
+                    <div class=home__calender__part>
+                        <button id="home__calender__display__button">
+
+                        </button>
+                        <div class="home__calender">
+                            <div class="month">
+                                <i class="fas fa-angle-left prev"></i>
+                                <div class="date">
+                                  <h3></h3>
+                                  
+                                </div>
+                                <i class="fas fa-angle-right next"></i>
+                            </div>
+                              <div class="weekdays">
+                                <div>S</div>
+                                <div>M</div>
+                                <div>T</div>
+                                <div>W</div>
+                                <div>T</div>
+                                <div>F</div>
+                                <div>S</div>
+                              </div>
+                              <div class="days">
+                                  
+                              </div>
+                        </div>
+
+                    </div>
+                    <div class="home__charts">
+                        <div class="home__calories">Calories</div>
+                        <div class="home__chart__container" id="home__chart__container"></div>
+                        <select class="home__chart__dummy__data">
+                            <option value="Consumed">Consumed</option>
+                            <option value="Burned">Burned</option>
+                            <option value="Net">Net</option>
+                            <option value="Combined">Combined</option>
+                        </select>
+                        <select class="home__chart__dummy__data">
+                            <option value="Last 7 days">Last 7 days</option>
+                            <option value="Last 2 weeks">Last 2 weeks</option>
+                            <option value="Last 4 weeks">Last 4 weeks</option>
+                            <option value="Last 8 weeks">Last 8 weeks</option>
+                        </select>
+                        <div class="home__chart__container" id="home__chart__container__part2"></div>
+                    </div>
+                </div>
+                <div class="home__info">
+                    <div class="home__info__apps">
+                        <div id="home__app__function__food" onClick="addFood()">
+                            <span>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAbCAYAAABm409WAAABhElEQVR42rVWTU6DQBSeI/QIPUJvIEln0pmYaBcuFExkI7Czexd2b6IcgbVg6E53kniAdg8Eb9DeoL6HTENbsFpmXvLCMMD3vf+BkAZxQmviRtaHVCe6Gstndmz34PmzE5pz0IQcI25ozgB4XVfv1bS9+LLvRmYh944m8MJrY5fAiaxl5ZEEXwGZT46VKkzrFl1gqEhXuX0xB2DpFMnAg6Aerk7ABWODdETPMz68wfVuXtD6wjB6hWAn+Yjd4RXvDwJnYjhOBZtngq23lLPi3Tl9e3y6mAf3Z5+ZoPHeO4Iuc04fWolyQSf7H/1f0cA9ErRcBXidZJuA05VKAlSMSAXObNXgMm/S+pkWAtCyAlPOFroIMLdEHzgkm9OpVoIy0dAgXxo9MAjUbKKVABa+LgItXVzr5kRrJ2MD12aR4jCBwVsDr+BGX7EHfsNZoMiLXes3XsCmip7YTNEmwbrtaP3s8LH56/hu9xCH5p/OZemJnLJlp9dLrvopgL3gp7xLUr8N/BsO/opsSCT2igAAAABJRU5ErkJggg=="/>
+
+                            </span>
+                           
+                               ADD FOOD
+                           
+                        </div>
+                        <div  id="home__app__function__exercise" onClick="addExercise()">
+                            <span>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAbCAYAAABiFp9rAAABiklEQVR42rVW0U3DMBDNCIzACGxAR3A26AawAd2AfNcuzQZ0A9igbEDli8RnuwG9s5Nix2fjGmPJaqsqfnfvvXtO0/xhie3XrVDwKpQ+4v7E7w9N7SW2xxshYd8q+Ha3kMNjXSAJizmIBYJ9XSClBQeE+1BMUfsC99N29WmlPgUdKeiKhGbpIQMgdaYrF0zqHRX2o6F+nn7zIJthGaElBKSCCBQ/vSJHoxg3roe7PBAJ73aHVF0AN/Bk9mh37388MwAiMTkqRqetcjp1nj+xIN6B2EGomV9pmlbdu3RmL+oucujHRSccVqtXwgAlwzkO6KLacHq6+RrsakbNKip0iQbxoeUNQAXUzLM+lmdFgpPX5zSkDGA7+iVeAhCMB+5hsq1rYc4Q9sLLvOxMtIQPe2E6ZZUdZCaxc/QaKTokgrNjblYP0BSXSyNNNVNtVHRzT/lg/XXvAdhB7tTPZ+zqlDDzk0rdSGpgkW/Nf635u0NugWVZ6DjX3Kil6Z1DtZeBNRM9pBA6syPdnAHd7Oe2GWnwrAAAAABJRU5ErkJggg=="/>
+
+                            </span>
+                            
+                                ADD EXERCISE
+                            </span>
+                        </div>
+                        <div  id="home__app__function__biometric" onClick="addBiometric()">
+                            <span>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAbCAYAAACX6BTbAAABE0lEQVR42mPwXrpU0HPh4nleixa/A+L/FOOFi295LlpUzAACngsXzaWKoWjYY9GiIAZSXBy6fAXRhgMdvQJk+B98ipr2H/h/9927/8jg2KNH/xPWriNg+OI9eA3ffefuf3Tw5dcvMP3550+wxWQZDtKIzeC+o0fhfJAFuHyA1/CXX75gGJyzecv/8p27UMRBviPJcJAh6AAWBOiGv/j8hTTDQV5devEiHCOHLbocCOM2fOGiv7RI5/QzPGrV6v+nHj+hCO+8fRu74Ynr1v2nFDz//JmOhnsuWvxv1PBhZDiMM2o4VsNjVq/5f+XlS4rwofsPsBtOq4LrPY0MX80AbRDRot0SyuC+apWQ16JFi2jR4gIAV8p1DXqbIUkAAAAASUVORK5CYII="/>
+
+                            </span>
+                            ADD BIOMETRIC
+                        </div>
+                        <div  id="home__app__function__note" onClick="addNote()">
+                            <span>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAA/UlEQVR42s3WTwqCQBQGcNs3QmeoO7TvAkFnaRUEbTKL1h3EceUqaFFXmBatCqO9jozpNIOEEJraPM0HH/hn8YPhE5/GudahdnfuWejuY53/GmqjmVY0HkaGClIJFJirAgTHMfftXvrMQtNcTLyMVLDwsuNP1yoHQmBySoFQWCkQEisEobGvoI9RDI3lgnVhWaAyFpwmPCSr3ASHERxWJf/DGDE5O2/AEhLjE0tvwCeiLcGYaA8ja7CEZJmPNVCQP2FJi7bKoc4gA0NxLQWh+2HLMPkRJo1UC3X6xVi9EZjqvlg6FrrJP7XZBOZhfaHJjVheiP3xUdPxXd9rwQvV3Qwxk6K2XAAAAABJRU5ErkJggg=="/>
+
+                            </span>
+                            ADD NOTE
+                        </div>
+                    </div>
+                    <div class="home__info__titles">
+                        <span>Description</span>
+                        <span>Amount Unit</span>
+                        <span>Calories</span>
+                    </div>
+                    <div class="home__app__info__add" id="home__app__info__add">
+                        <table>
+                            
+                        </table>
+                    </div>
+                  
+                    <div class="home__pie__charts">
+                     
+        
+                        <div class="home__calories__summary">
+                            <div class="home__calories__donut__chart" id="home__calories__donut__chart"></div>
+                            <div class="home__calories__donut__chart" id="home__calories__donut__chart_2"></div>
+                            <div class="home__calories__donut__chart purple">
+                                <div>-1654</div>
+                                <div>Calorie Deficit</div>
+                            </div>
+                            
+                        </div>
+                        <div class="macro__nutrients__target">
+                            <div>
+                                <label>Energy</label>
+                                <span>0.0 kcal/1881 kcal (0%)</span><br>
+                            </div>
+                            
+                           <div>
+                            <label>Protien</label>
+                            <span>0.0 g/117.6g  (0%)</span><br>
+                           </div>
+                            <div>
+                                <label>Net carbs</label>
+                                <span>0.0 g/1881  (0%)</span><br>
+                            </div>
+                            <div>
+                                <label>FAT</label>
+                                 <span>0.0 /g1881  (0%)</span><br>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="last__div">
+                        <div class="nutrient__targets__gold__last__div">
+                            <div><p>Nutrients Target</p></div>
+                            <div><button id="suggest__food" class="suggest__food">Suggest Foods</button></div>
+                        </div>
+                        <div class="upgrade__to__gold">
+                            <div class="upgrade__gold__firstdiv">
+                                <div class="rounded__div">0% All Targets</div>
+                            </div>
+                            <div class="upgrade__gold__seconddiv">
+                                <img src="https://cdn1.cronometer.com/2020/scores/NutritionScores_BannerGoldA.png"/>
+                            </div>
+                        </div>
+                        <div class="hightligted__nutrients__last__div"></div>
+                        <div class="table__divs">
+                            <div class="table__left__div" id="table__left__div">
+                               
+                            </div>
+                            <div class="table__right__div" id="table__right__div">
+                                
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+
+            </div>
+        </div>
+        <script src="calender.js"></script>
+        <script src="Diary.js"></script>
+        <script src="homePageChart.js"></script>
+        <script src="homePageChart2.js"></script>
+        <script src="homeDonutChart.js"></script>
+        
+    </body>
+</html>
