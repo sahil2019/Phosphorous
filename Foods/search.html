@@ -161,9 +161,9 @@
     </footer>
     <div id="popup" class="popup">
         <div class="overlay"></div>
-       
+      
         <div class="content">
-            <button class="close-btn" onclick="closePopup" id="closer">&times;</button>
+            <button class="close-btn" onclick="closePopup()" id="popup">&times;</button>
             <div style="width: 750px; text-align: center;">
                 <div class="titlebar">
                     <div class="titlebar-title">Search Foods</div>
@@ -703,7 +703,7 @@
                 <tbody>
                     <tr>
                         <td align="center" style="vertical-align: middle;">
-                            <button type="button">Cancel</button>
+                            <button type="button" onclick="closePopup()" id="popup">Cancel</button>
                         </td>
                         <td align="center" style="vertical-align: middle;">
                             <button type="button" disabled="">Select</button>
