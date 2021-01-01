@@ -239,7 +239,7 @@ margin-top: 20px;
     border: 1px solid grey;
     left:1000px;
     top: 600px;
-    /* visibility: hidden; */
+    visibility: hidden;
     background-color:  #ffffff;
     z-index: 1;
 }
