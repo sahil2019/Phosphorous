@@ -1,0 +1,63 @@
+/* -----------------navbar-------------- */
+.trends__nav{
+    height: 80px;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.trends__nav__logo{
+margin-top: 20px;
+}
+
+.trends__nav__list{
+    display: flex;
+    margin-left: 200px;
+}
+
+
+.trends__nav__list  div{
+    display: flex;
+    /* border:  1px solid red; */
+    margin: 30px 20px;
+    height: 30px;
+    width: 50px;
+    color: orangered;
+    font-size: 20px;
+    text-decoration: none;
+}
+.trends__nav__list a{
+    text-decoration: none;
+}
+
+.section  {
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+}
+
+.section ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.section ul li a:hover {
+    color: #000;
+}
+.section ul li {
+    display: inline block;
+}
+
+.section ul li a {
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #5c5c5c;
+    cursor: pointer;
+    font-size: 15px;
+    text-shadow: none;
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 2px 20px;
+}

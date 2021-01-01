@@ -1,0 +1,437 @@
+/* h1, h2, h3, h4, h5, h6, h7
+{
+font-weight: normal;
+} */
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+/* -----------------navbar-------------- */
+.trends__nav{
+    height: 80px;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.trends__nav__logo{
+margin-top: 20px;
+}
+
+.trends__nav__list{
+    display: flex;
+    margin-left: 200px;
+}
+
+
+.trends__nav__list  div{
+    display: flex;
+    /* border:  1px solid red; */
+    margin: 30px 20px;
+    height: 30px;
+    width: 50px;
+    color: orangered;
+    font-size: 20px;
+    text-decoration: none;
+}
+.trends__nav__list a{
+    text-decoration: none;
+}
+
+
+/* ----------------------------------------------------body part----------------------------- */
+
+.trends__body{
+    /* border: 1px solid red; */
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.tag__above__img{
+    display: flex;
+    height: 30px;
+    margin-top: 50px;
+    /* border: 1px solid blue; */
+   
+}
+
+.tag__above__img > div{
+    display: flex;
+    height: 30px;
+    /* border: 1px solid rgb(9, 255, 0); */
+    width: 400px;
+    margin: 0px 100px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.tag__above__img__line{
+    display: flex;
+    height: 30px;
+    /* border: 1px solid rgb(30, 112, 22); */
+}
+
+
+.tag__above__img__line > div{
+    display: flex;
+    height: 30px;
+    width: 400px;
+    border-top: 1px  solid gray;
+    border-right:1px  solid gray ;
+    border-left: 1px  solid gray;
+    
+    margin: 0px 100px;
+}
+
+.img__container{
+    display: flex;
+    margin: 0px auto;
+    width: 92%;
+    /* border: 1px solid red; */
+}
+
+.img__box {
+    width: 270px;
+    height: 425px;
+    display: block;
+    margin: 0px 10px;
+    background: #f8f8f8;
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+.GHDCC5OBKGB {
+    width: 100%;
+    height: 45px;
+    margin: 15px 0 0 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.GHDCC5OBLGB {
+    margin: 5px 0 0 0;
+    padding: 0;
+    font-size: 22px;
+    font-weight: 500;
+    color: #404040;
+    text-align: center;
+}
+
+.GHDCC5OBJGB {
+    padding: 10px 25px;
+    margin: 0;
+    color: #404040;
+    font-size: 16px;
+}
+
+.GHDCC5OBAHB {
+    margin: 20px 0 0 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #404040;
+    text-align: center;
+}
+
+.GHDCC5OBCFB {
+    margin: 0 30px;
+    color: #404040;
+    font-weight: bold;
+    font-size: 14px;
+    width: 200px;
+    padding: 5px 0;
+    border: 1px solid #404040;
+    border-radius: 6px;
+}
+
+.GHDCC5OBMEB {
+    width: 80%;
+    margin: 20px 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 45px;
+}
+
+
+.radio__button{
+    margin-top: 90px;
+    margin-left: 30px;
+    color: orangered;
+}
+
+.plan__body__align {
+    margin: 30px auto;
+    /* border: 1px solid red; */
+    height: 100px;
+    width: 80%;
+}
+
+.button__color__1{
+    background-color: #ff763f;
+    color: white;
+}
+
+.button__color__2{
+    background-color: #67ac5b;
+    color: white;
+}
+
+.button__color__3{
+    background-color: #1d64cf;
+    color: white;
+}
+
+
+/*-------------------------------------- matter info div ---------------------------------------*/
+
+.plan__info{
+    width: 300px;
+    height: 1300px;
+    border-right: 1px solid grey;
+    margin-top: 40px;
+}
+.plan__info__inner{
+    text-align: left;
+    font-weight: 600;
+    font-size: 18px;
+}
+ul{
+    
+    line-height: 30px;
+}
+li{
+    font-size: 15px;
+}
+.plan__info__main{
+    width: 92%;
+    margin: 0px auto;
+    display: flex;
+}
+
+.bold__line{
+    font-weight: 600;
+    
+}
+
+
+
+/* ---------------------------accordian----------------------------- */
+
+
+.faq__main{
+    height: 350px;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.faq__1{
+    text-align: center;
+    color:#ff763f;
+    width: 80%;
+    margin: 0px auto;
+    height: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+.faq__inner{
+    height: 50px;
+    border-top: gray 1px solid;
+    /* border-bottom: 1px solid gray; */
+    width: 80%;
+    margin: 0px auto;
+    font-weight: 600;
+    color: black;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+
+/* ---------------------footer part------------------------------------ */
+
+
+/* Footer starts here */
+
+.footer-container {
+    margin: 60px auto 0;
+    width: 100%;
+}
+
+.footer-nav {
+    margin: 20px auto;
+    width: 100%;
+   
+}
+.footer-nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.footer-nav ul li {
+    display: inline block; 
+}
+.footer-nav ul li a{
+    font-weight: 600;
+    color: #4F4E53;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 2px 20px;
+}
+.orange-dot {
+    background: #FF763F;
+    border-radius: 50%;
+    height: 6px;
+    width: 6px;
+    margin: 0 0 2px 0;
+}
+.footer-container-gray {
+    width: 100%;
+    background: #4F4E53;
+    padding: 30px 0 60px;
+}
+
+.footer-left {
+    width: 30%;
+    float: left;
+}
+
+.footer-middle {
+    width: 40%;
+    float: left;
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+}
+.footer-middle a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-right {
+    width: 30%;
+    float: left;
+}
+
+.links-container {
+    text-align: right;
+    margin: 15px 30px 0 0;
+}
+
+.facebook {
+    background-image: url(https://cdn1.cronometer.com/logos/icon-facebook-white.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+.twitter {
+    background-image: url(https://cdn1.cronometer.com/logos/icon-twitter-white.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+.instagram {
+    background-image: url(https://cdn1.cronometer.com/logos/icon-instagram-white.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+.youtube {
+    background-image: url(https://cdn1.cronometer.com/logos/icon-youtube-white.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+.links{
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+.footer-container-gray::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.support_button {
+    background-color: #27ae60 !important;
+    color: #ffffff !important;
+    fill: #ffffff !important;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border: none;
+    padding: 15px 20px 15px 20px;
+    position: fixed;
+    top: 90%;
+    left: 5%;
+    transform: translate(-50%, -40%);
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <!---------------------- dynamic elements card effects ------------------------> */
+
+.img__card{
+    visibility: hidden;
+    width: 640px;
+    height: 220px;
+    border: 1px solid grey;
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    left: 20px;
+    background-color: white;
+}
+
+.img__card > div{
+    width: 300px;
+    height: 200px;
+    border: 1px solid orangered  ;
+    float: left;
+    margin: 10px 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    
+}
+
+.img__card > div:hover{
+  
+    border: 1px solid orangered;
+    
+}
+
+.img__para{
+    font-size: 10px;
+}
+.inline {
+    font-size: 10px;
+}
+
+.outer{
+    background-color:  #ffffff;
+}
+/* .dropdown__img{
+    position: relative;
+} */
