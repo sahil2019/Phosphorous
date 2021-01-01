@@ -8,6 +8,7 @@
         <style>
             .home__main__container{
                 border:1px solid grey;
+                margin-bottom: 2vh;
             }
             .home__main__container__upper{
                 display: flex;
@@ -144,15 +145,15 @@
                 width:100%;
                
                 display: flex;
-                justify-content: center;
+                justify-content:space-between;
                 align-items: center;
                 flex-wrap: wrap;
-               min-height: 10%;
+               min-height: 20vh;
                 
              } 
              .home__info__apps > div{
                 
-                 margin: 0 10px;
+                 margin: 0 2px;
                  padding:5px ;
                  color:#404040;
                 
@@ -160,11 +161,7 @@
                 
 
              }
-             .home__info__apps > div:hover{
-                 background-color:rgb(238, 238, 238) ;
-                 border-radius: 10px;
-                 cursor: pointer;
-             }
+            
             /* .home__info__apps  span{
                 margin-left:20px;
                 margin-top: 20px;
@@ -350,8 +347,217 @@
             width:100%;
             height:110%;
            }
+           .table__divs{
+               display: flex;
+               justify-content: center;
+               border:2px solid purple;
 
+           }
+           .table__divs > div{
+               width:100%;
+               margin:1vh;
+               min-height:40vh;
+               border:1px solid black;
+           }
+           .indiv__tables{
+               margin:2vh 0.7vh;
+               border:1px solid grey;
+               width:100%;
+               border-radius: 10px;
+               border-collapse: collapse;
+               color:grey;
+
+           }
+           .table__upper__part{
+               background-color:#ddd;
+               text-align: center;
+               font-weight: bold;
+               width:100%;
+           }
            
+           .last__col__border{
+               border:1px solid grey;
+               border-radius: 5px;
+               text-align: center;
+               min-width: 60%;
+               background-color: white;
+               color:#ddd;
+               margin: auto;
+               
+           }
+           .hightligted__nutrients__last__div
+           {
+               width:97%;
+               margin:auto;
+               min-height: 15vh;
+               border:2px solid royalblue;
+                
+           }
+           .highlight__nutrients{
+            color:#bbb;
+            width:100%;
+            text-align: left;
+            padding-left: 6px;
+            margin-bottom: 2vh;
+            
+           }
+           .ball__div{
+            display: flex;
+               justify-content: center;
+               align-items: center;
+           }
+           .nutrients__ball{
+               height:68px;
+               width:68px;
+               border-radius: 50%;
+               border:5px solid #ddd;
+               text-align: center;
+               margin-left: 5px;
+               color:#333;
+               font-weight: bold;
+               cursor: pointer;
+               margin-bottom: 1.4vh;
+              
+           }
+           .add__food__button{
+               border:0;
+               outline: none;
+               background-color: white;
+               font-weight: bold;
+              font-size: 15px;
+              color:#404040;
+           }
+           
+           .home__info__apps > div:hover{
+               background-color: rgb(238, 238, 238) ;
+               border-radius:10px;
+               cursor: pointer;
+
+           }
+           .home__info__apps > div > button:hover{
+               background-color: rgb(238, 238, 238) ;
+               border-radius:10px;
+               cursor: pointer;
+
+           }
+           /* FOOTER CSS   >>>>>>>>>>>> */
+           .footer-container {
+    margin: 60px auto 0;
+    width: 100%;
+}
+
+.footer-nav {
+    margin: 20px auto;
+    width: 100%;
+   
+}
+.footer-nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.footer-nav ul li {
+    display: inline block; 
+}
+.footer-nav ul li a{
+    font-weight: 600;
+    color: #4F4E53;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 2px 20px;
+}
+.orange-dot {
+    background: #FF763F;
+    border-radius: 50%;
+    height: 6px;
+    width: 6px;
+    margin: 0 0 2px 0;
+}
+.footer-container-gray {
+    width: 100%;
+    background: #4F4E53;
+    padding: 30px 0 60px;
+}
+
+.footer-left {
+    width: 30%;
+    float: left;
+}
+
+.footer-middle {
+    width: 40%;
+    float: left;
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+}
+.footer-middle a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-right {
+    width: 30%;
+    float: left;
+}
+
+.links-container {
+    text-align: right;
+    margin: 15px 30px 0 0;
+}
+
+.facebook {
+    background-image: url(https://cdn1.cronometer.com/logos/icon-facebook-white.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+.twitter {
+    background-image: url(https://cdn1.cronometer.com/logos/icon-twitter-white.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+.instagram {
+    background-image: url(https://cdn1.cronometer.com/logos/icon-instagram-white.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+.youtube {
+    background-image: url(https://cdn1.cronometer.com/logos/icon-youtube-white.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+.links{
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+.footer-container-gray::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.support_button {
+    background-color: #27ae60 !important;
+    color: #ffffff !important;
+    fill: #ffffff !important;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border: none;
+    padding: 15px 20px 15px 20px;
+    position: fixed;
+    top: 90%;
+    left: 5%;
+    transform: translate(-50%, -40%);
+    z-index: 1;
+}
+          
         </style>
         
     </head>
@@ -431,37 +637,37 @@
                 </div>
                 <div class="home__info">
                     <div class="home__info__apps">
-                        <div id="home__app__function__food" onClick="addFood()">
+                        <div id="home__app__function__food">
                             <span>
                                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAbCAYAAABm409WAAABhElEQVR42rVWTU6DQBSeI/QIPUJvIEln0pmYaBcuFExkI7Czexd2b6IcgbVg6E53kniAdg8Eb9DeoL6HTENbsFpmXvLCMMD3vf+BkAZxQmviRtaHVCe6Gstndmz34PmzE5pz0IQcI25ozgB4XVfv1bS9+LLvRmYh944m8MJrY5fAiaxl5ZEEXwGZT46VKkzrFl1gqEhXuX0xB2DpFMnAg6Aerk7ABWODdETPMz68wfVuXtD6wjB6hWAn+Yjd4RXvDwJnYjhOBZtngq23lLPi3Tl9e3y6mAf3Z5+ZoPHeO4Iuc04fWolyQSf7H/1f0cA9ErRcBXidZJuA05VKAlSMSAXObNXgMm/S+pkWAtCyAlPOFroIMLdEHzgkm9OpVoIy0dAgXxo9MAjUbKKVABa+LgItXVzr5kRrJ2MD12aR4jCBwVsDr+BGX7EHfsNZoMiLXes3XsCmip7YTNEmwbrtaP3s8LH56/hu9xCH5p/OZemJnLJlp9dLrvopgL3gp7xLUr8N/BsO/opsSCT2igAAAABJRU5ErkJggg=="/>
 
                             </span>
                            
-                               ADD FOOD
+                             <button id="add__food__button" class="add__food__button">ADD FOOD</button>  
                            
                         </div>
-                        <div  id="home__app__function__exercise" onClick="addExercise()">
+                        <div  id="home__app__function__exercise">
                             <span>
                                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAbCAYAAABiFp9rAAABiklEQVR42rVW0U3DMBDNCIzACGxAR3A26AawAd2AfNcuzQZ0A9igbEDli8RnuwG9s5Nix2fjGmPJaqsqfnfvvXtO0/xhie3XrVDwKpQ+4v7E7w9N7SW2xxshYd8q+Ha3kMNjXSAJizmIBYJ9XSClBQeE+1BMUfsC99N29WmlPgUdKeiKhGbpIQMgdaYrF0zqHRX2o6F+nn7zIJthGaElBKSCCBQ/vSJHoxg3roe7PBAJ73aHVF0AN/Bk9mh37388MwAiMTkqRqetcjp1nj+xIN6B2EGomV9pmlbdu3RmL+oucujHRSccVqtXwgAlwzkO6KLacHq6+RrsakbNKip0iQbxoeUNQAXUzLM+lmdFgpPX5zSkDGA7+iVeAhCMB+5hsq1rYc4Q9sLLvOxMtIQPe2E6ZZUdZCaxc/QaKTokgrNjblYP0BSXSyNNNVNtVHRzT/lg/XXvAdhB7tTPZ+zqlDDzk0rdSGpgkW/Nf635u0NugWVZ6DjX3Kil6Z1DtZeBNRM9pBA6syPdnAHd7Oe2GWnwrAAAAABJRU5ErkJggg=="/>
 
                             </span>
                             
-                                ADD EXERCISE
+                            <button id="add__exercise__button" class="add__food__button">ADD EXERCISE</button>
                             </span>
                         </div>
-                        <div  id="home__app__function__biometric" onClick="addBiometric()">
+                        <div  id="home__app__function__biometric">
                             <span>
                                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAbCAYAAACX6BTbAAABE0lEQVR42mPwXrpU0HPh4nleixa/A+L/FOOFi295LlpUzAACngsXzaWKoWjYY9GiIAZSXBy6fAXRhgMdvQJk+B98ipr2H/h/9927/8jg2KNH/xPWriNg+OI9eA3ffefuf3Tw5dcvMP3550+wxWQZDtKIzeC+o0fhfJAFuHyA1/CXX75gGJyzecv/8p27UMRBviPJcJAh6AAWBOiGv/j8hTTDQV5devEiHCOHLbocCOM2fOGiv7RI5/QzPGrV6v+nHj+hCO+8fRu74Ynr1v2nFDz//JmOhnsuWvxv1PBhZDiMM2o4VsNjVq/5f+XlS4rwofsPsBtOq4LrPY0MX80AbRDRot0SyuC+apWQ16JFi2jR4gIAV8p1DXqbIUkAAAAASUVORK5CYII="/>
 
                             </span>
-                            ADD BIOMETRIC
+                            <button id="add__biometric__button" class="add__food__button">ADD BIOMETRIC</button>
                         </div>
-                        <div  id="home__app__function__note" onClick="addNote()">
+                        <div  id="home__app__function__note">
                             <span>
                                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAA/UlEQVR42s3WTwqCQBQGcNs3QmeoO7TvAkFnaRUEbTKL1h3EceUqaFFXmBatCqO9jozpNIOEEJraPM0HH/hn8YPhE5/GudahdnfuWejuY53/GmqjmVY0HkaGClIJFJirAgTHMfftXvrMQtNcTLyMVLDwsuNP1yoHQmBySoFQWCkQEisEobGvoI9RDI3lgnVhWaAyFpwmPCSr3ASHERxWJf/DGDE5O2/AEhLjE0tvwCeiLcGYaA8ja7CEZJmPNVCQP2FJi7bKoc4gA0NxLQWh+2HLMPkRJo1UC3X6xVi9EZjqvlg6FrrJP7XZBOZhfaHJjVheiP3xUdPxXd9rwQvV3Qwxk6K2XAAAAABJRU5ErkJggg=="/>
 
                             </span>
-                            ADD NOTE
+                            <button id="add__note__button" class="add__food__button">ADD NOTE</button>
                         </div>
                     </div>
                     <div class="home__info__titles">
@@ -470,7 +676,7 @@
                         <span>Calories</span>
                     </div>
                     <div class="home__app__info__add" id="home__app__info__add">
-                        <table>
+                        <table id="home__table__info">
                             
                         </table>
                     </div>
@@ -521,7 +727,20 @@
                                 <img src="https://cdn1.cronometer.com/2020/scores/NutritionScores_BannerGoldA.png"/>
                             </div>
                         </div>
-                        <div class="hightligted__nutrients__last__div"></div>
+                        <div class="hightligted__nutrients__last__div">
+                            <div class="highlight__nutrients">Highlighted nutrients</div>
+                            <div class="ball__div">
+                                <div class="nutrients__ball"><p>0%</br>Fiber</p></div>
+                                <div class="nutrients__ball"><p>0%</br>Iron</p></div>
+                                <div class="nutrients__ball"><p>0%</br>Calcium</p></div>
+                                <div class="nutrients__ball"><p>0%</br>Vit.A</p></div>
+                                <div class="nutrients__ball"><p>0%</br>Vit.C</p></div>
+                                <div class="nutrients__ball"><p>0%</br>Vit.B12</p></div>
+                                <div class="nutrients__ball"><p>0%</br>Folate<p></div>
+                                <div class="nutrients__ball"><p>0%</br>Pottasium</p></div>
+                            </div>
+                           
+                        </div>.
                         <div class="table__divs">
                             <div class="table__left__div" id="table__left__div">
                                
@@ -536,11 +755,89 @@
 
             </div>
         </div>
+        <!-- FOOTER PART    ........................ -->
+        <footer class="footer-container">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="https://cronometer.com/blog/">Blog</a></li>
+                    <li>
+                        <div class="orange-dot"></div>
+                    </li>
+                    <li><a href="https://forums.cronometer.com/sso">Forums</a></li>
+                    <li>
+                        <div class="orange-dot"></div>
+                    </li>
+                    <li><a href="https://cronometer.com/privacy/">Privacy</a></li>
+                    <li>
+                        <div class="orange-dot"></div>
+                    </li>
+                    <li><a href="https://cronometer.com/terms/">Terms</a></li>
+                    <li>
+                        <div class="orange-dot"></div>
+                    </li>
+                    <li><a href="https://www.shareasale.com/shareasale.cfm?merchantID=61121" target="_blank" rel="noopener noreferrer">Affiliates</a></li>
+                    <li>
+                        <div class="orange-dot"></div>
+                    </li>
+                    <li><a href="https://cronometer.com/jobs/">Jobs</a></li>
+                </ul>
+            </nav>
+    
+            <div class="footer-container-gray">
+                <div class="footer-left">
+                    <div class="app-links">
+                        <a href="https://itunes.apple.com/us/app/cronometer-gold/id1145935738?mt=8" target="_blank" rel="noopener noreferrer"> <img src="https://cdn1.cronometer.com/logos/app-store.png" width="auto" height="60px" alt="iOS App Store">
+                        </a> <a href="https://market.android.com/details?id=com.cronometer.android.gold" target="_blank" rel="noopener noreferrer"> <img src="https://cdn1.cronometer.com/logos/google-play.png" width="auto" height="60px" alt="Google Play Store">
+                        </a>
+                    </div>
+                    <div>
+                        <button class="support_button">
+                            <span   Icon" type="Icon"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><g id="Layer_4"><path d="M11,12.3V13c0,0-1.8,0-2,0v-0.6c0-0.6,0.1-1.4,0.8-2.1c0.7-0.7,1.6-1.2,1.6-2.1c0-0.9-0.7-1.4-1.4-1.4 c-1.3,0-1.4,1.4-1.5,1.7H6.6C6.6,7.1,7.2,5,10,5c2.4,0,3.4,1.6,3.4,3C13.4,10.4,11,10.8,11,12.3z"></path><circle cx="10" cy="15" r="1"></circle><path d="M10,2c4.4,0,8,3.6,8,8s-3.6,8-8,8s-8-3.6-8-8S5.6,2,10,2 M10,0C4.5,0,0,4.5,0,10s4.5,10,10,10s10-4.5,10-10S15.5,0,10,0 L10,0z"></path></g></svg></span>
+                            <span >Support</span>
+                        </button> 
+                    </div>
+                </div>
+         
+                <div class="footer-middle">
+                    <a href="https://cronometer.com" title="Cronometer.com"> <img src="https://cdn1.cronometer.com/logos/cronometer-logo-white.png" width="200" height="auto" alt="Cronometer.com">
+                    </a>
+        
+                    <p class="footer-copyright">
+                        <a href="/" title="jenkins-cronometer-prod-1059">Copyright © 2011-2020,
+                            All Rights Reserved</a>
+                    </p>
+                </div>
+        
+                <div class="footer-right">
+                    <div class="links-container">
+                        <div class="links">
+                            <a href="https://www.facebook.com/pages/CRON-O-Meter/176038029189451" target="_blank" rel="noopener noreferrer"> <div class="facebook"></div>
+                            </a>
+                        </div>
+                        <div class="links">
+                            <a href="https://twitter.com/cronometer" target="_blank" rel="noopener noreferrer"> <div class="twitter"></div>
+                            </a>
+                        </div>
+                        <div class="links">
+                            <a href="https://www.instagram.com/cronometer_official/" target="_blank" rel="noopener noreferrer"> <div class="instagram"></div>
+                            </a>
+                        </div>
+                        <div class="links">
+                            <a href="https://www.youtube.com/channel/UCX4_3R4oVBU3Ff5Jmh1iJbw" target="_blank" rel="noopener noreferrer"> <div class="youtube"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+       
+            </div>
+        </footer>
+    
         <script src="calender.js"></script>
         <script src="Diary.js"></script>
         <script src="homePageChart.js"></script>
         <script src="homePageChart2.js"></script>
         <script src="homeDonutChart.js"></script>
+        <script src="tables.js"></script>
         
     </body>
 </html>

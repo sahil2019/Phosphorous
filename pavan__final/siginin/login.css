@@ -45,3 +45,120 @@
 span{
     color: black;
 }
+/* FOOOTERR PART >>>>>>>>>>>>>>>>>>> */
+.footer-container {
+    margin: 60px auto 0;
+    width: 100%;
+}
+
+.footer-nav {
+    margin: 20px auto;
+    width: 100%;
+   
+}
+.footer-nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.footer-nav ul li {
+    display: inline block; 
+}
+.footer-nav ul li a{
+    font-weight: 600;
+    color: #4F4E53;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 2px 20px;
+}
+.orange-dot {
+    background: #FF763F;
+    border-radius: 50%;
+    height: 6px;
+    width: 6px;
+    margin: 0 0 2px 0;
+}
+.footer-container-gray {
+    width: 100%;
+    background: #4F4E53;
+    padding: 30px 0 60px;
+}
+
+.footer-left {
+    width: 30%;
+    float: left;
+}
+
+.footer-middle {
+    width: 40%;
+    float: left;
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+}
+.footer-middle a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-right {
+    width: 30%;
+    float: left;
+}
+
+.links-container {
+    text-align: right;
+    margin: 15px 30px 0 0;
+}
+
+.facebook {
+    background-image: url(https://cdn1.cronometer.com/logos/icon-facebook-white.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+.twitter {
+    background-image: url(https://cdn1.cronometer.com/logos/icon-twitter-white.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+.instagram {
+    background-image: url(https://cdn1.cronometer.com/logos/icon-instagram-white.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+.youtube {
+    background-image: url(https://cdn1.cronometer.com/logos/icon-youtube-white.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+.links{
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+.footer-container-gray::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.support_button {
+    background-color: #27ae60 !important;
+    color: #ffffff !important;
+    fill: #ffffff !important;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border: none;
+    padding: 15px 20px 15px 20px;
+    position: fixed;
+    top: 90%;
+    left: 5%;
+    transform: translate(-50%, -40%);
+    z-index: 1;
+}
