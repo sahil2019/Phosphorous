@@ -1,3 +1,35 @@
+/* -----------------navbar-------------- */
+.trends__nav{
+    height: 80px;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.trends__nav__logo{
+margin-top: 20px;
+}
+
+.trends__nav__list{
+    display: flex;
+    margin-left: 200px;
+}
+
+
+.trends__nav__list  div{
+    display: flex;
+    /* border:  1px solid red; */
+    margin: 30px 20px;
+    height: 30px;
+    width: 50px;
+    color: orangered;
+    font-size: 20px;
+    text-decoration: none;
+}
+.trends__nav__list a{
+    text-decoration: none;
+}
+
 .section  {
     margin: 20px auto;
     width: 100%;
