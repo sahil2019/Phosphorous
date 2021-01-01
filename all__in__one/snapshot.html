@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "icon" href ="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxEREhUSExISFhUXGBUbFRYYFxcaGBgYGBcYFhcYFxgYHSggGBslGxcYITEhJikrLy4uGB81ODMtNygtLisBCgoKDg0OGxAQGy0mICYtLSsyMC0tLy0tLS0vLS0tLS0tLS0tLy0tLS0tLS0tLy0vLS0tLS8tLS8tLS0tLi0tLf/AABEIAOEA4QMBEQACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABgcBBAUDAgj/xABFEAABAwICBwQGCAMHBAMAAAABAAIDBBEFIQYSMUFRYXEHIoGREzJScoKhFCNCYpKiscHC0dIXQ1STsuHwM1Nj8SRzs//EABsBAQACAwEBAAAAAAAAAAAAAAADBAECBQYH/8QANxEAAgECBAMFCAEEAgMBAAAAAAECAxEEEiExBUFRE2FxkdEiMoGhscHh8FIUFULxI2JDcrIG/9oA
 
     DAMBAAIRAxEAPwC8UAQBAEAQGvX1bYY3SvvqMF3EC9mjabDbYZ+CGspKKcmelPOyRoexwc1wu1wNwRxBCGU01dHohkIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgPKqgbIx0bhdr2ua4cnCx+RQxKKkmmUjgekNVhsrowdZrXubJE4nVJaS1xb7Dsto8QVEm0cClXnh5NfItnR3SimrW/Vvs+3eidk8ccvtDmLqRO52aOIhVXsvXodpZJwgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCApntPwz0NaZAO7M0PHDWHdePkD8SjktTh4+nlq36kTjeWkOaSCDcEEgg8QRsK1KadndEywLtFqobNmAnbxJ1ZB8QFj4i/NbZmi9Sx9SOktfqTrCdOaKewMhid7Mo1fzZt+aypo6FPGUp87eP7YkrXAi4IIOwhbloygCAIAgCAIAgCAID4bK0ktBBLbXHC+y/ktVNNtJ7A+1sAgCAIAgCAIAgCAIAgCAIAgIl2mYR6
@@ -36,440 +35,82 @@
     F44Vh0VNE2GJuqxoyG87ySd5JzJVxJJWR5qrUlUk5S3ZtrJGEAQBAEAQBAEAQBAEAQBAEAQBARXTPQ5laPSMIZOBk77LwNjX2+Tto5jJRVKSlrzOhgsfKg8stY/TwKgxChlgkMUrCx42g8OIOwjmMlUcWnZnpKdSNSOaDujWWDYwhgIYCAwhgwsmDnyMs888/Nb8irJWmzdjOS0ZYWxJ9ENEJa52sbsgB70ls3W2tjB2ndfYOZyUkKbl4FTFYyNBW3l09S5sLw2KmjbFCwNY3dvJ3knaSeJVtJJWR56pVlUlmk9TbWSMIAgCAIAgCAIAgCAIAgCAIAgCAIAgNHFsIgqmak8bXjdfItPFrhm09CtZRUtyWjXqUneDsQmv7LYybw1D2D2XtD/AABBb+6hdBcmdSnxeS9+N/DT1NH+yub/ABUf+W7+pY7B9ST+7w/g/P8AA/srm/xUf+W7+pOwfUf3eH8H5/gf2Vzf4qP/AC3f1J2D6mP7vD+D8/wY/sqm/wAVH/lu/qTsH1H92j/B+f4
     H9lU3+Kj/AMt39Sdg+o/u0f4Pz/B5ydkcriD9LjHH6on+MLKovqRy4nFu+T5/g72DdmVJCQ6V75yNxs1n4RmehcQtlRXMgqcSqtWjp9SbxxhoDWgAAAAAWAA2AAbApjnttu7PpDAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAf/2Q=="
      type = "image/x-icon"> 
-    <title>Cronometer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snapshot</title>
     <style>
-        .home__settings__main__container{
-               
-                position:relative;
-            }
-            .home__main__container__upper{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content:flex-start;
-            }
-            .home__main__container__upper > div{
-                margin: 3vh 2vh 0;
-                
-                text-align: center;
-                color:rgb(255, 123, 0);
-                padding:0 13px;
-                
-            }
-            .home__main__container__upper a{
-                text-decoration: none;
-                color:orangered;
-            }
-            .home__main__container__upper > div:nth-child(1)
-            {
-                width:24%;
-                text-align: left;
-                padding-left:10px;
-            }
-            .home__main__container__upper > div:nth-child(1) > img{
-                width:70%;
-                
-            }
-            .settings__sub__upper{
-                
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-wrap: wrap;
-                background-color: #fbfbfa;
-                font-weight: 600;
-                letter-spacing: 0.05em;
-                color: #5c5c5c;
-                cursor: pointer;
-                font-size: 14px;
-                padding: 0;
-            }
-            .settings__sub__upper > div{
-                margin: 1vh 3vh;
-                
-            }
-            .settings__sub__upper a{
-                text-decoration: none;
-                    color: #5c5c5c;
-            }
-            .settings__account__heading {
-                height:10vh;
-                font-size: 25px;
-                color:#333;
-                
-            }
-            .settings__account__heading > span{
-             
-              margin-top: 20px;
-              margin-left: 10vh;
-              display: inline-block;
-            }
-            .settings__account__mid__container{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-               
-                border-radius: 5px;
-            }
-            .settings__account__login__part{
-                width: 90%;
-                margin: auto;
-                
-                
-            }
-            .settings__account__login__part__upper{
-                padding:10px;
-                color:#333;
-                background-color: #fbfbfa;
-                font-size: 17px;
-                font-weight: bold;
-                border: 1px solid #e0e0dc;
-                border-radius: 2px;
-            
-            }
-            .settings__user__details{
-                width:70%;
-                margin: auto;
-              
-                font-size: 17px;
-                color:#333;
-                text-align: left;
-                padding-left: 10vh;
-                padding-right: 6vh;
-            }
-            .settings__user__details p{
-                font-size: 15px;
-                color:grey;
-            }
-            .settings__user__details h3{
-                font-weight: 500;
-            }
-            .settings__user__details a{
-                color:rgb(255, 94, 0);
-                
-                text-decoration: none;
-            }
-            .settings__user__details  > div{
-                width:85%;
-                
-                
-                font-size: 17px;
-                color:#333;
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #404040;
+}
 
-            }
-            .settings__user__details button{
-                margin-left: 1vh;
-                color:#e65f29;
-                border:0;
-                outline:none;
-                width:10vh;
-                background-color: white;
-                font-size: 18px;
-                border-radius: 5px;
+.trends__nav{
+    height: 80px;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    border-bottom: 1px solid grey;
+}
 
-            }
-            .settings__user__details button:hover{
-                background-color:#e0e0dc;
-            }
-            .settings__user__details input{
-                margin-left:10vh;
-                padding:1vh 10vh;
-                width:40vh;
-                margin-top: 1vh;
-            }
-           .settings__user__details > div:nth-child(1) input{
-               margin-left: 13.5vh;
-           }
-           .settings__logout__part
-           {
-               width:30vh;
-               padding:1vh 0;
-               background-color: rgb(255, 94, 0);
-               color:white;
-               border-radius: 4px;
-               margin:3vh auto;
-               text-align: center;
+.trends__nav__logo{
+margin-top: 20px;
+}
 
-           }
-           .settings__logout__part:hover{
-               box-shadow: 0 4px 5px 2px grey;
-               cursor: pointer;
-           }
-           .subscription__part{
-               margin: 3vh auto;
-               width:90%;
-               border:1px solid grey;
-           }
-           .subscription__part > div:nth-child(1)
-           {
-                 padding:10px;
-                color:#333;
-                background-color: #fbfbfa;
-                font-size: 17px;
-                font-weight: bold;
-                border: 1px solid #e0e0dc;
-                border-radius: 2px;
-            
-           }
-           .subscription__part__main{
-               display: flex;
-                justify-content: center;
-                align-items: center; 
-               flex-wrap: wrap;
-           }
-           .subscription__part__main > div{
-               margin:1vh 10vh;
-           }
-           .subscription__part__main p{
-               color: grey;
-           }
-
-           .notification__part{
-               margin: 3vh auto;
-               width:90%;
-               border:1px solid grey;
-           }
-           .notification__part > div:nth-child(1){
-                padding:10px;
-                color:#333;
-                background-color: #fbfbfa;
-                font-size: 17px;
-                font-weight: bold;
-                border: 1px solid #e0e0dc;
-                border-radius: 2px;
-             
-           }
-           .notification__part__main{
-               margin:auto;
-               
-               width:60%;
-               text-align: left;
-               padding:10px 15px;
-               
-           }
-           .notification__part > div:nth-child(2)
-           {
-               margin: auto;
-               
-               width:60%;
-               text-align: left;
-               padding:10px 15px;
-           }
-           .notification__part__main select{
-               width:20vh;
-           }
-           .support__app{
-               width:20vh;
-               background-color:#27ae60;
-               color:white;
-               text-align: center;
-               padding:10px 2px;
-               border-radius: 30px;
-               
-               position: fixed;
-               z-index: 1;
-               left:2%;
-               bottom: 3%;
-           }
-           .account__data__part{
-            margin: 3vh auto;
-               width:90%;
-               border:1px solid grey;
-           }
-           .update__button__function{
-               width:40%;
-               position: absolute;
-               z-index: 1;
-               top:0;
-               left:30%;
-               min-height:20vh;
-                border:1px solid grey;
-                border-radius: 5px;
-                display: none;
-                background-color: white;
-           }
-           /* For  updating password */
-           .update__button__function__password{
-            width:40%;
-               position: absolute;
-               z-index: 1;
-               top:17%;
-               left:35%;
-               min-height:20vh;
-                border:1px solid grey;
-                border-radius: 5px;
-                display: none;
-                background-color: white;
-                box-shadow: 0 0 6px 3px rgb(49, 47, 47);
-           }
-         
-           .delete__button__function
-           {
-            width:50%;
-               position: absolute;
-               z-index: 1;
-               bottom:2%;
-               left:20%;
-               min-height:20vh;
-                border:1px solid grey;
-                border-radius: 5px;
-                display: none;
-                background-color: white;
-                box-shadow: 0 0 6px 3px rgb(49, 47, 47);
-           }
-           .delete__account__main__part{
-               padding:20px;
-               text-align: center;
-           }
-           .delete__account__main__part >div:nth-last-child(1)
-           {
-               display: flex;
-               justify-content: center;
-           }
-           .delete__account__main__part button{
-                margin:0 2vh;
-                padding:10px 30px;
-                font-size: 14px;
-                font-weight: bold;
-                border:0;
-                outline: none;
-                border-radius: 5px;
-                background-color: rgb(216, 216, 205);
-           }
-           textarea{
-               padding:20px 3vh;
-               width:90%;
-           }
-           .email__update__upper{
-                padding:10px;
-                color:#333;
-                background-color: #fbfbfa;
-                font-size: 24px;
-                font-weight: bold;
-                border: 1px solid #e0e0dc;
-                border-radius: 2px;
-                box-shadow: 0 5px 6px 2px grey;
-           
-            }
-            .email__update__main__part{
-                text-align: center;
-                width:100%;
-               
-               
-                
-            }
-            .password__update__main__part{
-                text-align: left;
-                width:100%;
+.trends__nav__list{
+    display: flex;
+    margin-left: 200px;
+}
+.trends__nav__list a{
+    color:#E65F29;
+    text-decoration: none;
+}
 
 
-            }
-            .password__update__main__part > div{
-                padding-left:2%;
-                font-size: 20px;
-                margin:1vh 0;
+.trends__nav__list > div{
+    display: flex;
+    /* border:  1px solid red; */
+    margin: 30px 20px;
+    height: 30px;
+    width: 50px;
+    color: orangered;
+    font-size: 20px;
+}
 
 
-            }
-            .password__update__main__part >div:nth-child(1) input{
-                margin-left:10vh;
-                text-align: center;
-                padding:1vh 2vh;
+/* ******************************************************* */
+.settings__sub__upper{
+                
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #fbfbfa;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #5c5c5c;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+.settings__sub__upper > div{
+    /* border: 1px solid red; */
+    margin: 1vh 3vh;
+    
+}
+.settings__sub__upper > div:nth-child(1){
+    margin-left: 200px;
+    
+}
+/* ****************************************************** */
 
-            }
-            .password__update__main__part >div:nth-child(2) input{
-                margin-left:7vh;
-                text-align: center;
-                padding:1vh 2vh;
+.body__container{
+    height: 500px;
+    border: 1px solid grey;
+}
 
-            }
-            .password__update__main__part >div:nth-child(3) input{
-                margin-left:4vh;
-                text-align: center;
-                padding:1vh 2vh;
+/********************************************* Footer starts here********************************* */
 
-            }
-            .password__update__main__part >div:nth-last-child(1)
-            {
-                display: flex;
-                justify-content: space-between;
-                
-                
-            }
-            .password__update__main__part button{
-                margin:0 2vh;
-                padding:10px 30px;
-                font-size: 14px;
-                font-weight: bold;
-                border:0;
-                outline: none;
-                border-radius: 5px;
-                background-color: rgb(216, 216, 205);
-            }
-           
-            .email__update__main__part > div{
-             width:100%;
-             padding: 3vh 0;
-             font-size: 20px;
-            
-             margin:2vh 0;
-             
-            }
-            .email__update__main__part >div:nth-last-child(1)
-            {
-                display: flex;
-                justify-content: space-between;
-                
-                
-            }
-            
-            .email__update__main__part button{
-                margin:0 2vh;
-                padding:10px 30px;
-                font-size: 10px;
-                border:0;
-                outline: none;
-                background-color: beige;
-            }
-            .email__update__main__part input
-            {
-                width:80%;
-                text-align: center;
-                padding: 1vh 0;
-                margin: auto;
-            }
-            
-            .cancel__update__buttons
-            {
-                width:100%;
-                
-            }
-            .account__data__main{
-                display: flex;
-                justify-content: space-between;
-                margin: auto;
-                
-                width:60%;
-
-            }
-            .account__data__main h4{
-                margin: 3vh 10vh;
-            }
-            .account__data__main > button{
-                width:15%;
-                height:12%;
-                margin: 2vh auto;
-                border:0;
-                outline: none;
-                color:rgb(255, 94, 0);
-                background-color: white;
-            }
-            #delete__account{
-                border:1px solid rgb(255, 94, 0);
-                border-radius: 3px;
-            }
-           /* FOOTER PART....................... */
-           .footer-container {
+.footer-container {
     margin: 60px auto 0;
     width: 100%;
 }
@@ -570,18 +211,48 @@
     display: table;
     clear: both;
 }
+.support_button {
+    background-color: #27ae60 !important;
+    color: #ffffff !important;
+    fill: #ffffff !important;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border: none;
+    padding: 15px 20px 15px 20px;
+    position: fixed;
+    top: 90%;
+    left: 5%;
+    transform: translate(-50%, -40%);
+    z-index: 1;
+}
+
+.snap__button{
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 1200px;
+    border: green;
+    color: green;
+    margin-top: 10px;
+    
+}
+
+.inner__image{
+    width: 1000px;
+    height: 400px;
+    margin: 10px auto;
+    border: 1px solid white;
+}
 
     </style>
 </head>
 <body>
-    <div class="home__settings__main__container">
-        <div class="support__app">
-            support
-        </div>
-        <div class="home__main__container__upper">
-            <div>
-                <img src="https://cdn1.cronometer.com/logos/cronometer-logo-orange.png"/>
-            </div>
+    <div class="trends__nav">
+        <div class="trends__nav__logo">
+            <img  src="https://cdn1.cronometer.com/logos/cronometer-logo-orange.png" style="width: 200px; height: auto;margin-left: 30px;" class="dropdown__img" id="dropdown__img">
+            <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAAAtCAYAAAAwRkzIAAAApUlEQVR42u3QyQ3AQBACQTJzVk5//XIGoJ2jW+KPSud9DvNNIBgx/8AwYoIaAgXVjAlqABPUACagZkxQA5igBjBBDWCCGsAENYC5GVXpwAS1NuYGVN0KTFBrY05CVbXABLU2ZkdUdQnMZajqGqALUDUhMAeialpgDkHV9MBsiqptgdkEVdsDsygqikZU9IyoqBlR0TKiomRERceIiooRFQ0japevH0qoq6UJrp4pAAAAAElFTkSuQmCC" width="84" height="45" style="width: 10px; height: 5px;">
+        </div>  
+        <div class="trends__nav__list">
             <div>
                 <a href="homePage.html"><p>Diary</p></a>
             </div>
@@ -600,118 +271,46 @@
             <div>
                 <a href="help.html"><p>Help</p></a>
             </div>
-
-        </div>
-        <div class="settings__sub__upper">
-            <div>
-                <a href="homeSettings.html"><p>Account</p></a>
-            </div>
-            <div>
-                <a><p>Profile</p></a>
-            </div>
-            <div>
-                <a><p>Targets</p></a>
-            </div>
-            <div>
-                <a href="settingsFasting.html"><p>Fasting</p></a>
-            </div>
-            <div>
-                <a><p>Display</p></a>
-            </div>
-            <div>
-                <a><p>Devices</p></a>
-            </div>
-            <div>
-                <a><p>Sharing</p></a>
-            </div>
-        </div>
-        <div class="settings__account__heading">
-            <span>
-                Account Settings
-            </span>
-            
-        </div>
-        <div class="settings__account__mid__container">
-            <div class="settings__account__login__part">
-                <div id="update__button__function" class="update__button__function"></div>
-                <div id="delete__button__function" class="delete__button__function"></div>
-                <div id="update__button__function__password" class="update__button__function__password"></div>
-                <div class="settings__account__login__part__upper">Login</div>
-                <div class="settings__user__details">
-                    <div>
-                        <label >Email</label>
-                    <input id="orignal__email"  type="text" placeholder="raj2018.ondwar@gmail.com"/>
-                    <button onClick="updateEmailAdd()">Update</button>
-                    <br/>
-                    </div>
-                    <div>
-                        <label> Password</label>
-                    <input id="orignal__pass" type="text" placeholder="***************"/>
-                    <button onClick="updatePassAdd()">Update</button>
-                    </div>
-                    <hr >
-                </div>
-                <div class="settings__user__details">
-                    <h3>Two-Factor Authentication</h3>
-                    <p>Cronometer supports Two-Factor Authentication. To enable two-factor authentication, download an authenticator app<br> 
-                        from the app store or Google Play store such as <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2">Google Authenticator app</a> 
-                         Two factor is an optional additional security<br/> feature</p>
-                    <h3>Enable Two-Factor Authentication</h3>
-                </div>
-                <div class="settings__logout__part" onclick="logOutOptions">Log Out</div>
-                <div class="log__out__feature" id="log__out__feature"></div>
-                
-            </div>
-            <div class="subscription__part">
-                <div>Subscription</div>
-                <div class="subscription__part__main">
-                    <div>Account type</div>
-                    <div>
-                        <h4>Free with,Ads</h4>
-                        <p>Upgrade Today! Learn more about how our <a>GOLD</a> and <a>PRO</a> plans can<br/>help you and/or your business.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="notification__part">
-                <div>Notifications</div>
-                
-                <div>Send me newsletters and promotional emails</div>
-                <div class="notification__part__main">
-                    <span> Email me a reminder if I forget to enter diary details</span>
-                    <span><select>
-                        <option value="1:00PM">1:00PM</option>
-                        <option value="2:00PM">2:00PM</option>
-                        <option value="3:00PM">3:00PM</option>
-                        <option value="4:00PM">4:00PM</option>
-                        <option value="5:00PM">5:00PM</option>
-                        <option value="6:00PM">6:00PM</option>
-                        <option value="7:00PM">7:00PM</option>
-                        <option value="8:00PM">8:00PM</option>
-                        <option value="9:00PM">9:00PM</option>
-                        <option value="10:00PM">10:00PM</option>
-                        <option value="11:00PM">11:00PM</option>
-                    </select></span>
-                    </div>
-                </div>
-            </div>
-            <div class="notification__part" id="account__data__part">
-                <div>Account Data</div>
-                <div class="account__data__main">
-                    <img src="https://cronometer.com/img/cloud_download-2x.png"/>
-                    <h4>Export Data</h4>
-                    <p> Export all of your diary data to .csv files</p>
-                    <button>Export Data</button>
-                </div>
-                <div class="account__data__main">
-                    <img src="https://cdn1.cronometer.com/2018/logo/delete_forever-2x.png"/>
-                    <h4>Delete Account</h4>
-                    <p>Permanently delete your account and all of your data.</p>
-                    <button onClick="deleteAccount()" class="delete__account"id="delete__account">Delete Account</button>
-
-                </div>
-            </div>
         </div>
     </div>
+    <!-- new addition--------------------------------------------------------------------- -->
+    <div class="settings__sub__upper">
+        <div>
+            <a><p>Charts</p></a>
+        </div>
+        <div>
+            <a><p>Nutrition Report</p></a>
+        </div>
+        <div>
+            <a><p>Print Report</p></a>
+        </div>
+        <div>
+            <a><p>Snapshots</p></a>
+        </div>
+
+    </div>
+
+
+
+    <div class="body__container">
+
+
+        <!-- <button type="button" class="snap__button"  >Add Snapshot</button> -->
+
+
+        <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+       <div><label for="file" style="cursor: pointer;border: 1px solid green;" class="snap__button" >Add Snapshot</label></div>
+        <div class="inner__image">
+
+
+            
+            <img id="output"  width="1000px" height="400px"/>
+        
+        </div>
+    </div>
+
+<!-- -------------------------------------------footer-------------------------------------------- -->
+
     <footer class="footer-container">
         <nav class="footer-nav">
             <ul>
@@ -746,12 +345,12 @@
                     </a> <a href="https://market.android.com/details?id=com.cronometer.android.gold" target="_blank" rel="noopener noreferrer"> <img src="https://cdn1.cronometer.com/logos/google-play.png" width="auto" height="60px" alt="Google Play Store">
                     </a>
                 </div>
-                <!-- <div>
+                <div>
                     <button class="support_button">
-                        <span   Icon" type="Icon"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><g id="Layer_4"><path d="M11,12.3V13c0,0-1.8,0-2,0v-0.6c0-0.6,0.1-1.4,0.8-2.1c0.7-0.7,1.6-1.2,1.6-2.1c0-0.9-0.7-1.4-1.4-1.4 c-1.3,0-1.4,1.4-1.5,1.7H6.6C6.6,7.1,7.2,5,10,5c2.4,0,3.4,1.6,3.4,3C13.4,10.4,11,10.8,11,12.3z"></path><circle cx="10" cy="15" r="1"></circle><path d="M10,2c4.4,0,8,3.6,8,8s-3.6,8-8,8s-8-3.6-8-8S5.6,2,10,2 M10,0C4.5,0,0,4.5,0,10s4.5,10,10,10s10-4.5,10-10S15.5,0,10,0 L10,0z"></path></g></svg></span>
+                        <span    type="Icon"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><g id="Layer_4"><path d="M11,12.3V13c0,0-1.8,0-2,0v-0.6c0-0.6,0.1-1.4,0.8-2.1c0.7-0.7,1.6-1.2,1.6-2.1c0-0.9-0.7-1.4-1.4-1.4 c-1.3,0-1.4,1.4-1.5,1.7H6.6C6.6,7.1,7.2,5,10,5c2.4,0,3.4,1.6,3.4,3C13.4,10.4,11,10.8,11,12.3z"></path><circle cx="10" cy="15" r="1"></circle><path d="M10,2c4.4,0,8,3.6,8,8s-3.6,8-8,8s-8-3.6-8-8S5.6,2,10,2 M10,0C4.5,0,0,4.5,0,10s4.5,10,10,10s10-4.5,10-10S15.5,0,10,0 L10,0z"></path></g></svg></span>
                         <span >Support</span>
                     </button> 
-                </div> -->
+                </div>
             </div>
      
             <div class="footer-middle">
@@ -787,6 +386,11 @@
    
         </div>
     </footer>
-    <script src="settingsAccountUpdate.js"></script>
+    <script>
+        var loadFile = function(event) {
+            var image = document.getElementById('output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+        </script>
 </body>
 </html>

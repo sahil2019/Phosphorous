@@ -46,7 +46,11 @@
     margin: 50px 0px;
     color: orangered;
     box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.34)  -2px -2px -4px 0;
-   
+}
+
+.app__nav__login a{
+    text-decoration: none;
+    color: orangered;
 }
  
 

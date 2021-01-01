@@ -2,12 +2,17 @@ h1, h2, h3, h4, h5, h6, h7
 {
 font-weight: normal;
 }
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #404040;
+}
 
 .trends__nav{
     height: 80px;
     width: 100%;
     /* border: 1px solid red; */
     display: flex;
+    border-bottom: 1px solid grey;
 }
 
 .trends__nav__logo{
@@ -33,6 +38,34 @@ margin-top: 20px;
     color: orangered;
     font-size: 20px;
 }
+
+
+/* ******************************************************* */
+.settings__sub__upper{
+                
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #fbfbfa;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #5c5c5c;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+.settings__sub__upper > div{
+    /* border: 1px solid red; */
+    margin: 1vh 3vh;
+    
+}
+.settings__sub__upper > div:nth-child(1){
+    margin-left: 200px;
+    
+}
+/* ****************************************************** */
 
 /* <!---------------------- the below one is the body part of trends ------------------------> */
 
@@ -143,6 +176,7 @@ margin-top: 20px;
     height: 25px;
     margin: 30px;
     margin-left: 60px;
+    position: relative;
 }
 
 .trends__empty__1{
@@ -198,9 +232,27 @@ margin-top: 20px;
     position: relative;
 } */
 
+.popupdrop{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border: 1px solid grey;
+    left:1000px;
+    top: 600px;
+    /* visibility: hidden; */
+    background-color:  #ffffff;
+    z-index: 1;
+}
+
+.popupdrop div{
+    margin: 15px;
+    
+    
+}
 
 
-/* Footer starts here */
+
+/********************************************* Footer starts here********************************* */
 
 .footer-container {
     margin: 60px auto 0;

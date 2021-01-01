@@ -10,7 +10,7 @@ body {
 .trends__nav{
     height: 80px;
     width: 100%;
-    /* border: 1px solid red; */
+    border-bottom: 1px solid grey;
     display: flex;
 }
 
@@ -28,12 +28,22 @@ margin-top: 20px;
     display: flex;
     /* border:  1px solid red; */
     margin: 30px 20px;
-    height: 30px;
-    width: 50px;
-    color: orangered;
-    font-size: 20px;
+    height: 50px;
+    width: 60px;
+    color: #E65F29;
+    font-size: 18px;
     text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
 }
+
+
+/* #greybox{
+
+    border-top:  1px solid grey;
+    border-left:  1px solid grey;
+   border-right:  1px solid grey;
+} */
 .trends__nav__list a{
     text-decoration: none;
 }
@@ -423,10 +433,10 @@ li{
 }
 
 .img__para{
-    font-size: 10px;
+    font-size: 15px;
 }
 .inline {
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .outer{
@@ -435,3 +445,119 @@ li{
 /* .dropdown__img{
     position: relative;
 } */
+
+
+/* all about dynamic elements */
+
+
+
+.GHDCC5OBLHC {
+    width: 250px;
+    height: auto;
+    padding-left: 45px;
+    padding-right: 45px;
+    background: #fff 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    border: 1px solid #eee;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
+.GHDCC5OBKHC {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    z-index: 100;
+}
+
+.GHDCC5OBPHC {
+    padding-top: 20px;
+    display: inline-block;
+    width: 184px;
+    height: 35px;
+    z-index: 0;
+}
+
+.GHDCC5OBOHC {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #4f4e53;
+    opacity: 1;
+}
+
+.GHDCC5OBBIC {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 16px;
+    color: #404040;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.GHDCC5OBMHC {
+    display: inline-block;
+    font-weight: Regular;
+    font-size: 16px;
+    color: #404040;
+    padding-bottom: 20px;
+}
+
+.GHDCC5OBNHC {
+    display: inline-block;
+    font-weight: Regular;
+    font-size: 16px;
+    color: #404040;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.GHDCC5OBAIC {
+    display: inline-block;
+    width: 199px;
+    height: 32px;
+    margin-bottom: 20px;
+   
+}
+
+.btn-green-flat {
+    background: #67ac5b;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: none;
+    padding: 3px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    border: 1px solid #67ac5b;
+    border-radius: 6px;
+}
+
+.gwt-Button {
+    padding: 6px 12px;
+    background: url(https://cdn1.cronometer.com/pix/bg-gray-1.png) #f1f0f0;
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 #fff inset, 0 0 0 2px #fafafa;
+    font-size: 14px;
+    color: #333;
+    text-shadow: 0 1px 1px #fff;
+    background-color:  #67ac5b;
+}
+
+#button__design{
+    background-color: #67ac5b ;
+}
+
+
+#monthly{
+    display: none;
+}
+
+#annual{
+    /* display: none; */
+}
