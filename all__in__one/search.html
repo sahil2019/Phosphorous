@@ -14,14 +14,15 @@
             <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAAAtCAYAAAAwRkzIAAAApUlEQVR42u3QyQ3AQBACQTJzVk5//XIGoJ2jW+KPSud9DvNNIBgx/8AwYoIaAgXVjAlqABPUACagZkxQA5igBjBBDWCCGsAENYC5GVXpwAS1NuYGVN0KTFBrY05CVbXABLU2ZkdUdQnMZajqGqALUDUhMAeialpgDkHV9MBsiqptgdkEVdsDsygqikZU9IyoqBlR0TKiomRERceIiooRFQ0japevH0qoq6UJrp4pAAAAAElFTkSuQmCC" width="84" height="45" style="width: 10px; height: 5px;">
         </div>  
         <div class="trends__nav__list">
-            <div>Dairy</div>
-            <div>Trends</div>
-            <a href="custom.html"><div>Foods</div></a>
-            <div>Settings</div>
-            <div>Plans</div>
-            <a href="Help/help.html"><div>Help</div></a>
+            <a href="homePage.html"><div>Dairy</div></a>
+            <a href="trends.html"><div>Trends</div></a>
+            <a href="custom.html"><div>Foods</div></a>  
+            <a href="homeSettings.html"><div>Settings</div></a>
+            <a href="plan.html"><div>Plans</div></a>
+            <a href="help.html"><div>Help</div></a>
         </div>
     </div>
+
     <div class="section">
         <ul>
             <li>
@@ -163,7 +164,7 @@
         <div class="overlay"></div>
        
         <div class="content">
-            <button class="close-btn" onclick="closePopup" id="closer">&times;</button>
+            <button class="close-btn" onclick="closePopup()" id="popup">&times;</button>
             <div style="width: 750px; text-align: center;">
                 <div class="titlebar">
                     <div class="titlebar-title">Search Foods</div>
@@ -703,7 +704,7 @@
                 <tbody>
                     <tr>
                         <td align="center" style="vertical-align: middle;">
-                            <button type="button">Cancel</button>
+                            <button type="button" onclick="closePopup()" id="popup">Cancel</button>
                         </td>
                         <td align="center" style="vertical-align: middle;">
                             <button type="button" disabled="">Select</button>
