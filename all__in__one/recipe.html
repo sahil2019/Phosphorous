@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="recipe.css">
+</head>
+<body>
+    <div class="trends__nav">
+        <div class="trends__nav__logo">
+            <img  src="https://cdn1.cronometer.com/logos/cronometer-logo-orange.png" style="width: 200px; height: auto;margin-left: 30px;" class="dropdown__img" id="dropdown__img">
+            <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAAAtCAYAAAAwRkzIAAAApUlEQVR42u3QyQ3AQBACQTJzVk5//XIGoJ2jW+KPSud9DvNNIBgx/8AwYoIaAgXVjAlqABPUACagZkxQA5igBjBBDWCCGsAENYC5GVXpwAS1NuYGVN0KTFBrY05CVbXABLU2ZkdUdQnMZajqGqALUDUhMAeialpgDkHV9MBsiqptgdkEVdsDsygqikZU9IyoqBlR0TKiomRERceIiooRFQ0japevH0qoq6UJrp4pAAAAAElFTkSuQmCC" width="84" height="45" style="width: 10px; height: 5px;">
+        </div>  
+        <div class="trends__nav__list">
+            <a href="homePage.html"><div>Dairy</div></a>
+            <a href="trends.html"><div>Trends</div></a>
+            <a href="custom.html"><div>Foods</div></a>  
+            <a href="homeSettings.html"><div>Settings</div></a>
+            <a href="plan.html"><div>Plans</div></a>
+            <a href="help.html"><div>Help</div></a>
+        </div>
+    </div>
+    <div class="section">
+        <ul>
+            <li>
+                <a href="recipe.html">Custom Recipes</a>
+            </li>
+            <li>
+                <a href="custom.html">Custom Foods</a>
+            </li>
+            <li>
+                <a href="oracle.html">Ask the Oracle</a>
+            </li>
+            <li>
+                <a href="search.html">Search Foods</a>
+            </li>
+        </ul>
+    </div>
+    <div class="recipes">
+        <div class="title">
+            <h2>Custom Recipes</h2>
+            <p>Create a new recipe to quickly log your common meals instead of individual ingredients.</p>
+        </div>
+        <div class="inline">
+            <div class="container_1">
+                <div style="text-align: center;">
+                    <button type="button" class="button">+ Add Recipe</button>
+                </div>
+                <div class="input_1">
+                    <input type="text" placeholder="Search your recipes..." class="input">
+                </div>
+                <p>Sorted by Most Recent</p>
+                <div class="box">
+                    <div class="scrollbar">
+                        <div style="position: relative; zoom: 1;">
+                            <table cellpadding="0" cellspacing="0" style="width: 100%;"><colgroup><col></colgroup><tbody></tbody></table>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="text-align: center;">
+                    <p>Questions about creating your own recipes?</p>
+                </div>
+                <div>
+                    <img src="" width="80" height="80" class="gwt-Image inline" style="width: 12px; height: 12px; opacity: 0.5;">
+                    <span>LEARN MORE</span>
+                </div>  
+            </div>
+
+            <!-- container--------2 starts -->
+            <div class="container_2">
+                <div class="data">
+                   <div>New Recipe</div>
+                   <div class="unsaved">
+                        <div >Unsaved Recipe, Data Source: Custom</div>
+                    </div>
+                    <div class="recipe">
+                        <div class="recipe1">
+                                <table cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                        <tr>
+                                            <td align="left" style="vertical-align: middle;">
+                                                <div class="names">Names</div>
+                                            </td>
+                                            <td align="left" style="vertical-align: middle;">
+                                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAC1klEQVR4Ad2aA7AdMRSGUxvDuoO6w3bU8RvW7kOSut3soLZt23Y3qW3btm0bt/0Hz7r37t7dzZn537tKcr5Fcs7mEJstS8vlrJxQtIFQrIMp6RQh+e7/egHhNT7Dd/gNfos2xEsWbUVnE6tiq5qKTTIk/WEqHghGaCMkn9hGxVVBX66B1JxSM5eQrD+cslPos/3Wmrkie0YkNU3JfsEBJ4S+MUbUoKjsjsIIRSsKSd9g0EgIYxlrY8s7BdMLg7gj2sU+kNl18xqS7UHHrkrSnWHfW5i9hORfXACw/RLEzZ/fQzDxgk98GS8YwkzGrqMDL0oofjWoNcuQVKKhx7UiUzDmWloDDfwg+JrhpWZK9sEvQIbk79K99BA04od+EnxOc1aze7Bph8cG3n5+nUQnHxyxHapmausTomW7B5p1dFLg16+fSXT56XkHzhIdlvzs5MQXfgWCwBAP1HYNr+Z3IDAkXnfm+x0IDAQ2aBDJKiT743cgMICFmBavjA/8DgS1saLLEmFxpgsQWIgpae9QO+i5pX1g+O5+aUpdWJEC6ParG+m2GbqrV8hAYAlrQth6dT2ctFWvP70Mb2IwFTusC5Cw+DaCYFQbIMkfEPzRCginKZzgc+f1zWnq3ONTKRx++fFZum02XpZhXnKKTdJl2gZLfA6kAxBYiGHFNdQFCCxEWNGldQECC4HpEpzqmT5omeBpl4I79ZBk8sHRgafvHyXRkbsHnFl/khsegONLP6r1/HoFSGoWnxv5SciB0jJsKMXvZPtA8LVmRptgbWVclF+A4CvJjJmS9fM+DBtIgrH4TNaDEpIdDWmzWEj2yoMwr6Kt6DwkFMNzLq8BwScSjmGOF4rddBsEPsAX28phDMW2uLmfaldhk/sLLxZOJ62lFV1USLYgAvUIi8SaRsVIpExY0YWE4iPtB6GjWy5sUNjVAkAU76GIL9QCQETLKMOx4z7RrkTzH3QqZbXace6zAAAAAElFTkSuQmCC" width="52" height="52" class="iconbutton GHDCC5OBJO" title="Add Name..." style="width: 16px; height: 16px;">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="english">
+                                    <table cellspacing="2" cellpadding="2" class="GHDCC5OBBP">
+                                        <colgroup>
+                                            <col width="30px">
+                                            <col width="20em">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="https://cdn1.cronometer.com/media/flags/us.png" >
+                                                </td>
+                                                <td>
+                                                    <div class="gwt-Label lang-name">English</div>
+                                                </td>
+                                                <td>
+                                                    <input type="text" title="New Recipe" style="width: 100%;">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            
+                        
+                            <div class="category"> Category &amp; Tags <div> 
+                                <span class="select"> 
+                                    <select class="b1">
+                                        <option value=""></option>
+                                        <option value="Baby Foods">Baby Foods</option>
+                                        <option value="Baked Products">Baked Products</option>
+                                        <option value="Beef Products">Beef Products</option>
+                                        <option value="Beverages">Beverages</option>
+                                        <option value="Breakfast Cereals">Breakfast Cereals</option>
+                                        <option value="Cereal Grains and Pasta">Cereal Grains and Pasta</option>
+                                        <option value="Dairy and Egg Products">Dairy and Egg Products</option>
+                                        <option value="Ethnic Foods">Ethnic Foods</option>
+                                        <option value="Fast Foods">Fast Foods</option>
+                                        <option value="Fats and Oils">Fats and Oils</option>
+                                        <option value="Finfish and Shellfish Products">Finfish and Shellfish Products</option>
+                                        <option value="Fruits and Fruit Juices">Fruits and Fruit Juices</option>
+                                        <option value="Lamb, Veal, and Game Products">Lamb, Veal, and Game Products</option>
+                                        <option value="Legumes and Legume Products">Legumes and Legume Products</option>
+                                        <option value="Meals, Entrees, and Sidedishes">Meals, Entrees, and Sidedishes</option>
+                                        <option value="Nut and Seed Products">Nut and Seed Products</option>
+                                        <option value="Pork Products">Pork Products</option>
+                                        <option value="Poultry Products">Poultry Products</option>
+                                        <option value="Restaurant Foods">Restaurant Foods</option>
+                                        <option value="Sausages and Luncheon Meats">Sausages and Luncheon Meats</option>
+                                        <option value="Snacks">Snacks</option>
+                                        <option value="Soups, Sauces, and Gravies">Soups, Sauces, and Gravies</option>
+                                        <option value="Spices and Herbs">Spices and Herbs</option>
+                                        <option value="Supplements">Supplements</option>
+                                        <option value="Sweets">Sweets</option>
+                                        <option value="Vegetables and Vegetable Products">Vegetables and Vegetable Products</option>
+                                    </select>
+                                </span>
+                                <div class="tags">
+                                    <div>
+                                        <div class="tag">Whole</div>
+                                        <div class="tag">Brand</div>
+                                        <div class="tag">Restaurant</div>
+                                        <div class="tag">Supplement</div>
+                                        <div class="tag">Seafood</div>
+                                    </div>
+                                    <div>
+                                        <div class="tag">Vegetarian</div>
+                                        <div class="tag">Vegan</div>
+                                        <div class="tag">Dairy</div>
+                                        <div class="tag">Nuts</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="notes">
+                                <div>Notes</div>
+                                <div class="area">
+                                    <textarea class="gwt-TextArea" rows="4" style="width: 100%;">
+                                    </textarea>
+                                </div>
+                            </div>
+                            <div class="barcode">
+                                <table cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                        <tr>
+                                            <td align="left" style="vertical-align: middle;">
+                                                <div>Barcodes</div>
+                                            </td>
+                                            <td align="left" style="vertical-align: middle;">
+                                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAC1klEQVR4Ad2aA7AdMRSGUxvDuoO6w3bU8RvW7kOSut3soLZt23Y3qW3btm0bt/0Hz7r37t7dzZn537tKcr5Fcs7mEJstS8vlrJxQtIFQrIMp6RQh+e7/egHhNT7Dd/gNfos2xEsWbUVnE6tiq5qKTTIk/WEqHghGaCMkn9hGxVVBX66B1JxSM5eQrD+cslPos/3Wmrkie0YkNU3JfsEBJ4S+MUbUoKjsjsIIRSsKSd9g0EgIYxlrY8s7BdMLg7gj2sU+kNl18xqS7UHHrkrSnWHfW5i9hORfXACw/RLEzZ/fQzDxgk98GS8YwkzGrqMDL0oofjWoNcuQVKKhx7UiUzDmWloDDfwg+JrhpWZK9sEvQIbk79K99BA04od+EnxOc1aze7Bph8cG3n5+nUQnHxyxHapmausTomW7B5p1dFLg16+fSXT56XkHzhIdlvzs5MQXfgWCwBAP1HYNr+Z3IDAkXnfm+x0IDAQ2aBDJKiT743cgMICFmBavjA/8DgS1saLLEmFxpgsQWIgpae9QO+i5pX1g+O5+aUpdWJEC6ParG+m2GbqrV8hAYAlrQth6dT2ctFWvP70Mb2IwFTusC5Cw+DaCYFQbIMkfEPzRCginKZzgc+f1zWnq3ONTKRx++fFZum02XpZhXnKKTdJl2gZLfA6kAxBYiGHFNdQFCCxEWNGldQECC4HpEpzqmT5omeBpl4I79ZBk8sHRgafvHyXRkbsHnFl/khsegONLP6r1/HoFSGoWnxv5SciB0jJsKMXvZPtA8LVmRptgbWVclF+A4CvJjJmS9fM+DBtIgrH4TNaDEpIdDWmzWEj2yoMwr6Kt6DwkFMNzLq8BwScSjmGOF4rddBsEPsAX28phDMW2uLmfaldhk/sLLxZOJ62lFV1USLYgAvUIi8SaRsVIpExY0YWE4iPtB6GjWy5sUNjVAkAU76GIL9QCQETLKMOx4z7RrkTzH3QqZbXace6zAAAAAElFTkSuQmCC" width="52" height="52" title="Add Barcode..." style="width: 16px; height: 16px;">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="bar-icon">
+                                    <table>
+                                        <colgroup>
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                       </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="serving">
+                                <div style="width:100%" class="size">
+                                    <div >Serving Sizes</div>
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAC1klEQVR4Ad2aA7AdMRSGUxvDuoO6w3bU8RvW7kOSut3soLZt23Y3qW3btm0bt/0Hz7r37t7dzZn537tKcr5Fcs7mEJstS8vlrJxQtIFQrIMp6RQh+e7/egHhNT7Dd/gNfos2xEsWbUVnE6tiq5qKTTIk/WEqHghGaCMkn9hGxVVBX66B1JxSM5eQrD+cslPos/3Wmrkie0YkNU3JfsEBJ4S+MUbUoKjsjsIIRSsKSd9g0EgIYxlrY8s7BdMLg7gj2sU+kNl18xqS7UHHrkrSnWHfW5i9hORfXACw/RLEzZ/fQzDxgk98GS8YwkzGrqMDL0oofjWoNcuQVKKhx7UiUzDmWloDDfwg+JrhpWZK9sEvQIbk79K99BA04od+EnxOc1aze7Bph8cG3n5+nUQnHxyxHapmausTomW7B5p1dFLg16+fSXT56XkHzhIdlvzs5MQXfgWCwBAP1HYNr+Z3IDAkXnfm+x0IDAQ2aBDJKiT743cgMICFmBavjA/8DgS1saLLEmFxpgsQWIgpae9QO+i5pX1g+O5+aUpdWJEC6ParG+m2GbqrV8hAYAlrQth6dT2ctFWvP70Mb2IwFTusC5Cw+DaCYFQbIMkfEPzRCginKZzgc+f1zWnq3ONTKRx++fFZum02XpZhXnKKTdJl2gZLfA6kAxBYiGHFNdQFCCxEWNGldQECC4HpEpzqmT5omeBpl4I79ZBk8sHRgafvHyXRkbsHnFl/khsegONLP6r1/HoFSGoWnxv5SciB0jJsKMXvZPtA8LVmRptgbWVclF+A4CvJjJmS9fM+DBtIgrH4TNaDEpIdDWmzWEj2yoMwr6Kt6DwkFMNzLq8BwScSjmGOF4rddBsEPsAX28phDMW2uLmfaldhk/sLLxZOJ62lFV1USLYgAvUIi8SaRsVIpExY0YWE4iPtB6GjWy5sUNjVAkAU76GIL9QCQETLKMOx4z7RrkTzH3QqZbXace6zAAAAAElFTkSuQmCC" width="52" height="52" title="Add Measure" style="width: 16px; height: 16px;">
+                                    <div class="select">
+                                        <select >
+                                            <option value="Serving Based">Serving Based</option>
+                                            <option value="Weight Based">Weight Based</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div>
+                                    <table cellspacing="4" cellpadding="0" style="width: 100%;">
+                                        <tbody>
+                                            <tr>
+                                                <td align="left" style="vertical-align: top;">
+                                                    <table class="prettyTable" style="width: 100%;">
+                                                        <colgroup>
+                                                            <col>
+                                                        </colgroup>
+                                                        <tbody>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                       
+                        </div>
+                     
+                    </div>
+                    <div class="nutrition">
+                        <div style="width:100%;">
+                                <span class="select-pretty">
+                                    <select style="width: 302px; font-size: 18px; height: auto;">
+                                        <option value="AMERICAN">American Label</option>
+                                        <option value="AMERICAN_2016">American 2016</option>
+                                        <option value="EU">European Label</option>
+                                        <option value="AUSTRALIA_NZ">Australia/NZ Label</option>
+                                    </select>
+                                </span>
+                                <div class="new"><div>
+                                   
+                                    <div class="nutrition-label">
+                                        <div align="center" class="label">
+                                            <div class="new-recipe">New Recipe</div>
+                                            
+                                        </div>
+                                        <div class="label1">
+                                            <div class="fact">Nutrition Facts</div>
+                                            <table cellspacing="0" width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="3">
+                                                            <div class="">Serving Size: 1 full recipe</div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table cellspacing="0" class="dark" width="100%">
+                                                <tbody>
+                                                    <tr class="amount">
+                                                        <td colspan="2" nowrap="true">
+                                                            <div class="">Amount Per Serving</div>
+                                                        </td>
+                                                        <td align="right" nowrap="true">
+                                                            <div class="admin-daily-value">% Daily Value*</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>
+                                                            <div class="calorie">Calories</div> 
+                                                        </td> 
+                                                        <hr>
+                                                           
+                                                        <tr class="fat"> 
+                                                            <td> 
+                                                                <div>Total Fat</div> 
+                                                            </td> 
+                                                            <hr>
+                                                            <td> 
+                                                                <div >Saturated Fat</div> 
+                                                            </td> 
+                                                           
+                                                        </tr> 
+                                                        <tr> 
+                                                            <td> 
+                                                                <div>Trans Fat</div> 
+                                                            </td> 
+                                                          
+                                                        </tr> 
+                                                        <tr class=""> 
+                                                            <td> 
+                                                                <div class="">Cholesterol</div> 
+                                                            </td> 
+                                                           
+                                                        </tr> 
+                                                        <tr class=""> 
+                                                            <td> 
+                                                                <div class="">Sodium</div> 
+                                                            </td> 
+                                                           
+                                                        </tr> 
+                                                        <tr class=""> 
+                                                            <td> 
+                                                                <div class="">Total Carbohydrate</div> 
+                                                            </td> 
+                                                          
+                                                            <tr class=""> 
+                                                                <td> 
+                                                                    <div class="">Dietary Fiber</div> 
+                                                                </td> 
+                                                               
+                                                                <tr class=""> 
+                                                                    <td> 
+                                                                        <div class="">Sugars</div> 
+                                                                    </td> 
+                                                                   
+                                                                </tr> 
+                                                                <tr class=""> 
+                                                                    <td> 
+                                                                        <div class="">Protein</div> 
+                                                                    </td> 
+                                                                 
+                                                                </tr> 
+                                                            </tbody>
+                                                        </table> 
+                                                        <table cellspacing="0" width="100%"> 
+                                                            <tbody>
+                                                                <tr class=""> 
+                                                                   
+                                                                    <td> 
+                                                                        <div class="gwt-Label">Vitamin C</div> 
+                                                                    </td> 
+                                                                  
+                                                                </tr> 
+                                                                <tr class=""> 
+                                                                    <td> 
+                                                                        <div class="gwt-Label">Calcium</div> 
+                                                                    </td> 
+                                                                
+                                                                </tr> 
+                                                            </tbody>
+                                                        </table> 
+                                                            <div class="link_info"> * Percent Daily Values are based on a 2,000 calorie diet. Your daily values may be higher or lower depending on your calorie needs. </div> 
+                                                            <div> 
+                                                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEcAAAAmCAMAAAChxnbSAAAAM1BMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADxgEwMAAAAEHRSTlMAgPAQIMBAoGDgMLBQ0JBw7gWPeAAAATNJREFUeF6t1ttugzAQBmGvT2CTkHn/p23TKisZsVk39L/ngwsPcphdLaWs4foWIF9nUoR7uL4VWD8B8ujcIaYPXt9kVIHlG6jt9icFRmcH6tOBUieV2uDoRGjh15mUagEgDt9/Ax5Pp0dUmlEkDfimhyeJJflKyMD2MlXqhtKPik6Am6oqLflEycugDGsQVTEkXwkV2NUwJFfRRB3JU0ICigJnUlLWVuxEx4fFVvxEVSo/TuzBXgeWYC9t6hhHQROlewWUZ9y2pInailbiSCvweK80bVqiKW1AequsUwcd2FzFkTRRT/GlBm1aUWnnIFVArL+UoWhrKmmi5r/Ol9bTRLOh2JKcJloHxZU2kFeiYwWGYlcjp4lWFkeZSzTl8MH+8a7yuIpoohend5Xrjoj0WeAL4l4aw4W6dcEAAAAASUVORK5CYII=" width="71" height="38" class="GHDCC5OBAK" title="Embed HTML" alt="Embed HTML" style="width: 15px; height: auto; cursor: pointer;"> 
+                                                                <a class="gwt-Anchor" href="https://cronometer.com/food.html?food=0&amp;amount=1&amp;measure=0&amp;labelType=AMERICAN" target="CoM">Full Info at cronometer.com</a> 
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--       Footer starts  Here    -->
+    <footer class="footer-container">
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="https://cronometer.com/blog/">Blog</a></li>
+                <li>
+                    <div class="orange-dot"></div>
+                </li>
+                <li><a href="https://forums.cronometer.com/sso">Forums</a></li>
+                <li>
+                    <div class="orange-dot"></div>
+                </li>
+                <li><a href="https://cronometer.com/privacy/">Privacy</a></li>
+                <li>
+                    <div class="orange-dot"></div>
+                </li>
+                <li><a href="https://cronometer.com/terms/">Terms</a></li>
+                <li>
+                    <div class="orange-dot"></div>
+                </li>
+                <li><a href="https://www.shareasale.com/shareasale.cfm?merchantID=61121" target="_blank" rel="noopener noreferrer">Affiliates</a></li>
+                <li>
+                    <div class="orange-dot"></div>
+                </li>
+                <li><a href="https://cronometer.com/jobs/">Jobs</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer-container-gray">
+            <div class="footer-left">
+                <div class="app-links">
+                    <a href="https://itunes.apple.com/us/app/cronometer-gold/id1145935738?mt=8" target="_blank" rel="noopener noreferrer"> <img src="https://cdn1.cronometer.com/logos/app-store.png" width="auto" height="60px" alt="iOS App Store">
+                    </a> <a href="https://market.android.com/details?id=com.cronometer.android.gold" target="_blank" rel="noopener noreferrer"> <img src="https://cdn1.cronometer.com/logos/google-play.png" width="auto" height="60px" alt="Google Play Store">
+                    </a>
+                </div>
+                <div>
+
+                    <button class="support_button">
+                        <span   Icon" type="Icon"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><g id="Layer_4"><path d="M11,12.3V13c0,0-1.8,0-2,0v-0.6c0-0.6,0.1-1.4,0.8-2.1c0.7-0.7,1.6-1.2,1.6-2.1c0-0.9-0.7-1.4-1.4-1.4 c-1.3,0-1.4,1.4-1.5,1.7H6.6C6.6,7.1,7.2,5,10,5c2.4,0,3.4,1.6,3.4,3C13.4,10.4,11,10.8,11,12.3z"></path><circle cx="10" cy="15" r="1"></circle><path d="M10,2c4.4,0,8,3.6,8,8s-3.6,8-8,8s-8-3.6-8-8S5.6,2,10,2 M10,0C4.5,0,0,4.5,0,10s4.5,10,10,10s10-4.5,10-10S15.5,0,10,0 L10,0z"></path></g></svg></span>
+                        <span > Support</span>
+                    </button> 
+                </div>
+            </div>
+     
+            <div class="footer-middle">
+                <a href="https://cronometer.com" title="Cronometer.com"> <img src="https://cdn1.cronometer.com/logos/cronometer-logo-white.png" width="200" height="auto" alt="Cronometer.com">
+                </a>
+    
+                <p class="footer-copyright">
+                    <a href="/" title="jenkins-cronometer-prod-1059">Copyright © 2011-2020,
+                        All Rights Reserved</a>
+                </p>
+            </div>
+    
+            <div class="footer-right">
+                <div class="links-container">
+                    <div class="links">
+                        <a href="https://www.facebook.com/pages/CRON-O-Meter/176038029189451" target="_blank" rel="noopener noreferrer"> <div class="facebook"></div>
+                        </a>
+                    </div>
+                    <div class="links">
+                        <a href="https://twitter.com/cronometer" target="_blank" rel="noopener noreferrer"> <div class="twitter"></div>
+                        </a>
+                    </div>
+                    <div class="links">
+                        <a href="https://www.instagram.com/cronometer_official/" target="_blank" rel="noopener noreferrer"> <div class="instagram"></div>
+                        </a>
+                    </div>
+                    <div class="links">
+                        <a href="https://www.youtube.com/channel/UCX4_3R4oVBU3Ff5Jmh1iJbw" target="_blank" rel="noopener noreferrer"> <div class="youtube"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+   
+        </div>
+    </footer>
+</body>
+</html>

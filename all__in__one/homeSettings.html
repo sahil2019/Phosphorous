@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Cronometer</title>
+    <style>
+        .home__settings__main__container{
+               
+                position:relative;
+            }
+            .home__main__container__upper{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content:flex-start;
+            }
+            .home__main__container__upper > div{
+                margin: 3vh 2vh 0;
+                
+                text-align: center;
+                color:rgb(255, 123, 0);
+                padding:0 13px;
+                
+            }
+            .home__main__container__upper a{
+                text-decoration: none;
+                color:orangered;
+            }
+            .home__main__container__upper > div:nth-child(1)
+            {
+                width:24%;
+                text-align: left;
+                padding-left:10px;
+            }
+            .home__main__container__upper > div:nth-child(1) > img{
+                width:70%;
+                
+            }
+            .settings__sub__upper{
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                background-color: #fbfbfa;
+                font-weight: 600;
+                letter-spacing: 0.05em;
+                color: #5c5c5c;
+                cursor: pointer;
+                font-size: 14px;
+                padding: 0;
+            }
+            .settings__sub__upper > div{
+                margin: 1vh 3vh;
+                
+            }
+            .settings__account__heading {
+                height:10vh;
+                font-size: 25px;
+                color:#333;
+                
+            }
+            .settings__account__heading > span{
+             
+              margin-top: 20px;
+              margin-left: 10vh;
+              display: inline-block;
+            }
+            .settings__account__mid__container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+               
+                border-radius: 5px;
+            }
+            .settings__account__login__part{
+                width: 90%;
+                margin: auto;
+                
+                
+            }
+            .settings__account__login__part__upper{
+                padding:10px;
+                color:#333;
+                background-color: #fbfbfa;
+                font-size: 17px;
+                font-weight: bold;
+                border: 1px solid #e0e0dc;
+                border-radius: 2px;
+            
+            }
+            .settings__user__details{
+                width:70%;
+                margin: auto;
+              
+                font-size: 17px;
+                color:#333;
+                text-align: left;
+                padding-left: 10vh;
+                padding-right: 6vh;
+            }
+            .settings__user__details p{
+                font-size: 15px;
+                color:grey;
+            }
+            .settings__user__details h3{
+                font-weight: 500;
+            }
+            .settings__user__details a{
+                color:rgb(255, 94, 0);
+                
+                text-decoration: none;
+            }
+            .settings__user__details  > div{
+                width:85%;
+                
+                
+                font-size: 17px;
+                color:#333;
+
+            }
+            .settings__user__details button{
+                margin-left: 1vh;
+                color:#e65f29;
+                border:0;
+                outline:none;
+                width:10vh;
+                background-color: white;
+                font-size: 18px;
+                border-radius: 5px;
+
+            }
+            .settings__user__details button:hover{
+                background-color:#e0e0dc;
+            }
+            .settings__user__details input{
+                margin-left:10vh;
+                padding:1vh 10vh;
+                width:40vh;
+                margin-top: 1vh;
+            }
+           .settings__user__details > div:nth-child(1) input{
+               margin-left: 13.5vh;
+           }
+           .settings__logout__part
+           {
+               width:30vh;
+               padding:1vh 0;
+               background-color: rgb(255, 94, 0);
+               color:white;
+               border-radius: 4px;
+               margin:3vh auto;
+               text-align: center;
+
+           }
+           .settings__logout__part:hover{
+               box-shadow: 0 4px 5px 2px grey;
+               cursor: pointer;
+           }
+           .subscription__part{
+               margin: 3vh auto;
+               width:90%;
+               border:1px solid grey;
+           }
+           .subscription__part > div:nth-child(1)
+           {
+                 padding:10px;
+                color:#333;
+                background-color: #fbfbfa;
+                font-size: 17px;
+                font-weight: bold;
+                border: 1px solid #e0e0dc;
+                border-radius: 2px;
+            
+           }
+           .subscription__part__main{
+               display: flex;
+                justify-content: center;
+                align-items: center; 
+               flex-wrap: wrap;
+           }
+           .subscription__part__main > div{
+               margin:1vh 10vh;
+           }
+           .subscription__part__main p{
+               color: grey;
+           }
+
+           .notification__part{
+               margin: 3vh auto;
+               width:90%;
+               border:1px solid grey;
+           }
+           .notification__part > div:nth-child(1){
+                padding:10px;
+                color:#333;
+                background-color: #fbfbfa;
+                font-size: 17px;
+                font-weight: bold;
+                border: 1px solid #e0e0dc;
+                border-radius: 2px;
+             
+           }
+           .notification__part__main{
+               margin:auto;
+               
+               width:60%;
+               text-align: left;
+               padding:10px 15px;
+               
+           }
+           .notification__part > div:nth-child(2)
+           {
+               margin: auto;
+               
+               width:60%;
+               text-align: left;
+               padding:10px 15px;
+           }
+           .notification__part__main select{
+               width:20vh;
+           }
+           .support__app{
+               width:20vh;
+               background-color:#27ae60;
+               color:white;
+               text-align: center;
+               padding:10px 2px;
+               border-radius: 30px;
+               
+               position: fixed;
+               z-index: 1;
+               left:2%;
+               bottom: 3%;
+           }
+           .account__data__part{
+            margin: 3vh auto;
+               width:90%;
+               border:1px solid grey;
+           }
+           .update__button__function{
+               width:40%;
+               position: absolute;
+               z-index: 1;
+               top:0;
+               left:30%;
+               min-height:20vh;
+                border:1px solid grey;
+                border-radius: 5px;
+                display: none;
+                background-color: white;
+           }
+           /* For  updating password */
+           .update__button__function__password{
+            width:40%;
+               position: absolute;
+               z-index: 1;
+               top:17%;
+               left:35%;
+               min-height:20vh;
+                border:1px solid grey;
+                border-radius: 5px;
+                display: none;
+                background-color: white;
+                box-shadow: 0 0 6px 3px rgb(49, 47, 47);
+           }
+         
+           .delete__button__function
+           {
+            width:50%;
+               position: absolute;
+               z-index: 1;
+               bottom:2%;
+               left:20%;
+               min-height:20vh;
+                border:1px solid grey;
+                border-radius: 5px;
+                display: none;
+                background-color: white;
+                box-shadow: 0 0 6px 3px rgb(49, 47, 47);
+           }
+           .delete__account__main__part{
+               padding:20px;
+               text-align: center;
+           }
+           .delete__account__main__part >div:nth-last-child(1)
+           {
+               display: flex;
+               justify-content: center;
+           }
+           .delete__account__main__part button{
+                margin:0 2vh;
+                padding:10px 30px;
+                font-size: 14px;
+                font-weight: bold;
+                border:0;
+                outline: none;
+                border-radius: 5px;
+                background-color: rgb(216, 216, 205);
+           }
+           textarea{
+               padding:20px 3vh;
+               width:90%;
+           }
+           .email__update__upper{
+                padding:10px;
+                color:#333;
+                background-color: #fbfbfa;
+                font-size: 24px;
+                font-weight: bold;
+                border: 1px solid #e0e0dc;
+                border-radius: 2px;
+                box-shadow: 0 5px 6px 2px grey;
+           
+            }
+            .email__update__main__part{
+                text-align: center;
+                width:100%;
+               
+               
+                
+            }
+            .password__update__main__part{
+                text-align: left;
+                width:100%;
+
+
+            }
+            .password__update__main__part > div{
+                padding-left:2%;
+                font-size: 20px;
+                margin:1vh 0;
+
+
+            }
+            .password__update__main__part >div:nth-child(1) input{
+                margin-left:10vh;
+                text-align: center;
+                padding:1vh 2vh;
+
+            }
+            .password__update__main__part >div:nth-child(2) input{
+                margin-left:7vh;
+                text-align: center;
+                padding:1vh 2vh;
+
+            }
+            .password__update__main__part >div:nth-child(3) input{
+                margin-left:4vh;
+                text-align: center;
+                padding:1vh 2vh;
+
+            }
+            .password__update__main__part >div:nth-last-child(1)
+            {
+                display: flex;
+                justify-content: space-between;
+                
+                
+            }
+            .password__update__main__part button{
+                margin:0 2vh;
+                padding:10px 30px;
+                font-size: 14px;
+                font-weight: bold;
+                border:0;
+                outline: none;
+                border-radius: 5px;
+                background-color: rgb(216, 216, 205);
+            }
+           
+            .email__update__main__part > div{
+             width:100%;
+             padding: 3vh 0;
+             font-size: 20px;
+            
+             margin:2vh 0;
+             
+            }
+            .email__update__main__part >div:nth-last-child(1)
+            {
+                display: flex;
+                justify-content: space-between;
+                
+                
+            }
+            
+            .email__update__main__part button{
+                margin:0 2vh;
+                padding:10px 30px;
+                font-size: 10px;
+                border:0;
+                outline: none;
+                background-color: beige;
+            }
+            .email__update__main__part input
+            {
+                width:80%;
+                text-align: center;
+                padding: 1vh 0;
+                margin: auto;
+            }
+            
+            .cancel__update__buttons
+            {
+                width:100%;
+                
+            }
+            .account__data__main{
+                display: flex;
+                justify-content: space-between;
+                margin: auto;
+                
+                width:60%;
+
+            }
+            .account__data__main h4{
+                margin: 3vh 10vh;
+            }
+            .account__data__main > button{
+                width:15%;
+                height:12%;
+                margin: 2vh auto;
+                border:0;
+                outline: none;
+                color:rgb(255, 94, 0);
+                background-color: white;
+            }
+            #delete__account{
+                border:1px solid rgb(255, 94, 0);
+                border-radius: 3px;
+            }
+           /* FOOTER PART....................... */
+           .footer-container {
+    margin: 60px auto 0;
+    width: 100%;
+}
+
+.footer-nav {
+    margin: 20px auto;
+    width: 100%;
+   
+}
+.footer-nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.footer-nav ul li {
+    display: inline block; 
+}
+.footer-nav ul li a{
+    font-weight: 600;
+    color: #4F4E53;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 2px 20px;
+}
+.orange-dot {
+    background: #FF763F;
+    border-radius: 50%;
+    height: 6px;
+    width: 6px;
+    margin: 0 0 2px 0;
+}
+.footer-container-gray {
+    width: 100%;
+    background: #4F4E53;
+    padding: 30px 0 60px;
+}
+
+.footer-left {
+    width: 30%;
+    float: left;
+}
+
+.footer-middle {
+    width: 40%;
+    float: left;
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+}
+.footer-middle a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-right {
+    width: 30%;
+    float: left;
+}
+
+.links-container {
+    text-align: right;
+    margin: 15px 30px 0 0;
+}
+
+.facebook {
+    background-image: url(https://cdn1.cronometer.com/logos/icon-facebook-white.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+.twitter {
+    background-image: url(https://cdn1.cronometer.com/logos/icon-twitter-white.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+.instagram {
+    background-image: url(https://cdn1.cronometer.com/logos/icon-instagram-white.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+.youtube {
+    background-image: url(https://cdn1.cronometer.com/logos/icon-youtube-white.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+.links{
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+.footer-container-gray::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+    </style>
+</head>
+<body>
+    <div class="home__settings__main__container">
+        <div class="support__app">
+            support
+        </div>
+        <div class="home__main__container__upper">
+            <div>
+                <img src="https://cdn1.cronometer.com/logos/cronometer-logo-orange.png"/>
+            </div>
+            <div>
+                <a href="homePage.html"><p>Diary</p></a>
+            </div>
+            <div>
+                <a href="trends.html"><p>Trends</p></a>
+            </div>
+            <div>
+                <a href="custom.html"><p>Foods</p></a>
+            </div>
+            <div>
+                <a href="homeSettings.html"><p>Settings</p></a>
+            </div>
+            <div>
+                <a href="plan.html"><p>Plans</p></a>
+            </div>
+            <div>
+                <a href="help.html"><p>Help</p></a>
+            </div>
+
+        </div>
+        <div class="settings__sub__upper">
+            <div>
+                <a><p>Account</p></a>
+            </div>
+            <div>
+                <a><p>Profile</p></a>
+            </div>
+            <div>
+                <a><p>Targets</p></a>
+            </div>
+            <div>
+                <a><p>Fasting</p></a>
+            </div>
+            <div>
+                <a><p>Display</p></a>
+            </div>
+            <div>
+                <a><p>Devices</p></a>
+            </div>
+            <div>
+                <a><p>Sharing</p></a>
+            </div>
+        </div>
+        <div class="settings__account__heading">
+            <span>
+                Account Settings
+            </span>
+            
+        </div>
+        <div class="settings__account__mid__container">
+            <div class="settings__account__login__part">
+                <div id="update__button__function" class="update__button__function"></div>
+                <div id="delete__button__function" class="delete__button__function"></div>
+                <div id="update__button__function__password" class="update__button__function__password"></div>
+                <div class="settings__account__login__part__upper">Login</div>
+                <div class="settings__user__details">
+                    <div>
+                        <label >Email</label>
+                    <input id="orignal__email"  type="text" placeholder="raj2018.ondwar@gmail.com"/>
+                    <button onClick="updateEmailAdd()">Update</button>
+                    <br/>
+                    </div>
+                    <div>
+                        <label> Password</label>
+                    <input id="orignal__pass" type="text" placeholder="***************"/>
+                    <button onClick="updatePassAdd()">Update</button>
+                    </div>
+                    <hr >
+                </div>
+                <div class="settings__user__details">
+                    <h3>Two-Factor Authentication</h3>
+                    <p>Cronometer supports Two-Factor Authentication. To enable two-factor authentication, download an authenticator app<br> 
+                        from the app store or Google Play store such as <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2">Google Authenticator app</a> 
+                         Two factor is an optional additional security<br/> feature</p>
+                    <h3>Enable Two-Factor Authentication</h3>
+                </div>
+                <div class="settings__logout__part" onclick="logOutOptions">Log Out</div>
+                <div class="log__out__feature" id="log__out__feature"></div>
+                
+            </div>
+            <div class="subscription__part">
+                <div>Subscription</div>
+                <div class="subscription__part__main">
+                    <div>Account type</div>
+                    <div>
+                        <h4>Free with,Ads</h4>
+                        <p>Upgrade Today! Learn more about how our <a>GOLD</a> and <a>PRO</a> plans can<br/>help you and/or your business.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="notification__part">
+                <div>Notifications</div>
+                
+                <div>Send me newsletters and promotional emails</div>
+                <div class="notification__part__main">
+                    <span> Email me a reminder if I forget to enter diary details</span>
+                    <span><select>
+                        <option value="1:00PM">1:00PM</option>
+                        <option value="2:00PM">2:00PM</option>
+                        <option value="3:00PM">3:00PM</option>
+                        <option value="4:00PM">4:00PM</option>
+                        <option value="5:00PM">5:00PM</option>
+                        <option value="6:00PM">6:00PM</option>
+                        <option value="7:00PM">7:00PM</option>
+                        <option value="8:00PM">8:00PM</option>
+                        <option value="9:00PM">9:00PM</option>
+                        <option value="10:00PM">10:00PM</option>
+                        <option value="11:00PM">11:00PM</option>
+                    </select></span>
+                    </div>
+                </div>
+            </div>
+            <div class="notification__part" id="account__data__part">
+                <div>Account Data</div>
+                <div class="account__data__main">
+                    <img src="https://cronometer.com/img/cloud_download-2x.png"/>
+                    <h4>Export Data</h4>
+                    <p> Export all of your diary data to .csv files</p>
+                    <button>Export Data</button>
+                </div>
+                <div class="account__data__main">
+                    <img src="https://cdn1.cronometer.com/2018/logo/delete_forever-2x.png"/>
+                    <h4>Delete Account</h4>
+                    <p>Permanently delete your account and all of your data.</p>
+                    <button onClick="deleteAccount()" class="delete__account"id="delete__account">Delete Account</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-container">
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="https://cronometer.com/blog/">Blog</a></li>
+                <li>
+                    <div class="orange-dot"></div>
+                </li>
+                <li><a href="https://forums.cronometer.com/sso">Forums</a></li>
+                <li>
+                    <div class="orange-dot"></div>
+                </li>
+                <li><a href="https://cronometer.com/privacy/">Privacy</a></li>
+                <li>
+                    <div class="orange-dot"></div>
+                </li>
+                <li><a href="https://cronometer.com/terms/">Terms</a></li>
+                <li>
+                    <div class="orange-dot"></div>
+                </li>
+                <li><a href="https://www.shareasale.com/shareasale.cfm?merchantID=61121" target="_blank" rel="noopener noreferrer">Affiliates</a></li>
+                <li>
+                    <div class="orange-dot"></div>
+                </li>
+                <li><a href="https://cronometer.com/jobs/">Jobs</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer-container-gray">
+            <div class="footer-left">
+                <div class="app-links">
+                    <a href="https://itunes.apple.com/us/app/cronometer-gold/id1145935738?mt=8" target="_blank" rel="noopener noreferrer"> <img src="https://cdn1.cronometer.com/logos/app-store.png" width="auto" height="60px" alt="iOS App Store">
+                    </a> <a href="https://market.android.com/details?id=com.cronometer.android.gold" target="_blank" rel="noopener noreferrer"> <img src="https://cdn1.cronometer.com/logos/google-play.png" width="auto" height="60px" alt="Google Play Store">
+                    </a>
+                </div>
+                <!-- <div>
+                    <button class="support_button">
+                        <span   Icon" type="Icon"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><g id="Layer_4"><path d="M11,12.3V13c0,0-1.8,0-2,0v-0.6c0-0.6,0.1-1.4,0.8-2.1c0.7-0.7,1.6-1.2,1.6-2.1c0-0.9-0.7-1.4-1.4-1.4 c-1.3,0-1.4,1.4-1.5,1.7H6.6C6.6,7.1,7.2,5,10,5c2.4,0,3.4,1.6,3.4,3C13.4,10.4,11,10.8,11,12.3z"></path><circle cx="10" cy="15" r="1"></circle><path d="M10,2c4.4,0,8,3.6,8,8s-3.6,8-8,8s-8-3.6-8-8S5.6,2,10,2 M10,0C4.5,0,0,4.5,0,10s4.5,10,10,10s10-4.5,10-10S15.5,0,10,0 L10,0z"></path></g></svg></span>
+                        <span >Support</span>
+                    </button> 
+                </div> -->
+            </div>
+     
+            <div class="footer-middle">
+                <a href="https://cronometer.com" title="Cronometer.com"> <img src="https://cdn1.cronometer.com/logos/cronometer-logo-white.png" width="200" height="auto" alt="Cronometer.com">
+                </a>
+    
+                <p class="footer-copyright">
+                    <a href="/" title="jenkins-cronometer-prod-1059">Copyright © 2011-2020,
+                        All Rights Reserved</a>
+                </p>
+            </div>
+    
+            <div class="footer-right">
+                <div class="links-container">
+                    <div class="links">
+                        <a href="https://www.facebook.com/pages/CRON-O-Meter/176038029189451" target="_blank" rel="noopener noreferrer"> <div class="facebook"></div>
+                        </a>
+                    </div>
+                    <div class="links">
+                        <a href="https://twitter.com/cronometer" target="_blank" rel="noopener noreferrer"> <div class="twitter"></div>
+                        </a>
+                    </div>
+                    <div class="links">
+                        <a href="https://www.instagram.com/cronometer_official/" target="_blank" rel="noopener noreferrer"> <div class="instagram"></div>
+                        </a>
+                    </div>
+                    <div class="links">
+                        <a href="https://www.youtube.com/channel/UCX4_3R4oVBU3Ff5Jmh1iJbw" target="_blank" rel="noopener noreferrer"> <div class="youtube"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+   
+        </div>
+    </footer>
+    <script src="settingsAccountUpdate.js"></script>
+</body>
+</html>
