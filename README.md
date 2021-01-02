@@ -50,8 +50,7 @@ In order to use the project you need to follow the below steps.
 👤 **Suraj Kumar**
 
 - Github: [Digitaluraj](https://github.com/Digitalsuraj)
-- Linkedin: [Suraj Kumar]
-  ](https://www.linkedin.com/in/digitalsurajbabu/)
+- Linkedin: [Suraj Kumar](https://www.linkedin.com/in/digitalsurajbabu/)
 
 👤 **Sahil Raj**
 
