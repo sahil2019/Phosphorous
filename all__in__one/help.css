@@ -75,7 +75,7 @@ margin-top: 20px;
     color: #fff;
     font-size: 20px;
     background: #45af64;
-    padding: 10px 40px 10px 40px;
+    padding: 15px 40px 15px 40px;
     text-decoration: none;
     font-weight: bold;
     display: block;
@@ -87,6 +87,17 @@ margin-top: 20px;
     margin-left: -140px;
     margin-bottom: 20px;
     cursor: pointer;
+}
+
+.container-1 a::after, .container-2 a::after, .container-3 a::after, .container-4 a::after, .container-5 a::after, .container-6 a::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    left: 3px;
+    border-style: solid;
+    border-width: 6px 0 6px 10px;
+    border-color: transparent transparent transparent white;
 }
 
 .container-1:hover, .container-2:hover, .container-3:hover, .container-4:hover, .container-5:hover, .container-6:hover{
