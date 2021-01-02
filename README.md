@@ -49,16 +49,16 @@ In order to use the project you need to follow the below steps.
 
 👤 **Suraj Kumar**
 
-- Github: [iharshgaur](https://github.com/Digitalsuraj)
-- Linkedin: [Harsh Gaur
+- Github: [Digitaluraj](https://github.com/Digitalsuraj)
+- Linkedin: [Suraj Kumar]
   ](https://www.linkedin.com/in/digitalsurajbabu/)
 
 👤 **Sahil Raj**
 
-- Github: [pushpal99](https://github.com/sahil2019)
-- Linkedin: [Pushpal Chakrabarty](https://www.linkedin.com/in/)
+- Github: [sahil2019](https://github.com/sahil2019)
+- Linkedin: [Sahil Raj](https://www.linkedin.com/in/)
 
 👤 **K Pavan Kumar**
 
-- Github: [ankurpoplu](https://github.com/pavangoudk)
-- Linkedin: [Ankur Pandey](https://www.linkedin.com/in/k-pavan-kumar-613345aa/)
+- Github: [pavangoudk](https://github.com/pavangoudk)
+- Linkedin: [K Pavan Kumar](https://www.linkedin.com/in/k-pavan-kumar-613345aa/)
