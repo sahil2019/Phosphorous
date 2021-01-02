@@ -24,21 +24,33 @@ In order to use the project you need to follow the below steps.
 
 1.  This is our Landing page. On clicking on login you will be redirected to login page
     <img src="landing.png" >
+    
+    
 
 2.  This is our Login page.
     <img src="login.png">
     
+    
+    
 3.  After your giving email and password you will be redirected to dairy page.
     <img src="dairy.png">
+    
+    
 
 4.  This is our Trends page.
     <img src="trends.png">
+    
+    
 
 5.  This is our Foods page.
     <img src="foods.png">
+    
+    
 
 6.  This is our Settings page.
     <img src="setting.png">
+    
+    
 
 7.  This is our Help page.
     <img src="help.png">
