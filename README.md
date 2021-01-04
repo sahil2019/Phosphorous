@@ -21,29 +21,30 @@ In this project we have used the following tech stack.
 ## How to browse through the project? 🤔
 
 In order to use the project you need to follow the below steps.
+First open landing_index.html follow these steps.
 
 1.  This is our Landing page. On clicking on login you will be redirected to login page
-    <img src="landing.png" >
+    <img src="images/landing.png" >
     
     
 
 2.  This is our Login page.
-    <img src="login.png">
+    <img src="images/login.png">
     
     
     
 3.  After your giving email and password you will be redirected to dairy page.
-    <img src="dairy.png">
+    <img src="images/dairy.png">
     
     
 
 4.  This is our Trends page.
-    <img src="trends.png">
+    <img src="images/trends.png">
     
     
 
 5.  This is our Foods page.
-    <img src="foods.png">
+    <img src="images/foods.png">
     
     
 
