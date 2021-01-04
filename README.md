@@ -48,12 +48,12 @@ In order to use the project you need to follow the below steps.
     
 
 6.  This is our Settings page.
-    <img src="setting.png">
+    <img src="images/setting.png">
     
     
 
 7.  This is our Help page.
-    <img src="help.png">
+    <img src="images/help.png">
 
 <br>
 
@@ -61,13 +61,13 @@ In order to use the project you need to follow the below steps.
 
 👤 **Suraj Kumar**
 
-- Github: [Digitaluraj](https://github.com/Digitalsuraj)
+- Github: [Digitalsuraj](https://github.com/Digitalsuraj)
 - Linkedin: [Suraj Kumar](https://www.linkedin.com/in/digitalsurajbabu/)
 
 👤 **Sahil Raj**
 
 - Github: [sahil2019](https://github.com/sahil2019)
-- Linkedin: [Sahil Raj](https://www.linkedin.com/in/)
+- Linkedin: [Sahil Raj](https://www.linkedin.com/in/sahil-raj-5123b7162)
 
 👤 **K Pavan Kumar**
 
